@@ -1,0 +1,47 @@
+2024.01.12 12:37:58 INFO  Started: Metals version 1.2.0 in folders 'C:\URV\Progra\RepositorioGitHub\scalaTAP' for client Visual Studio Code 1.85.1.
+2024.01.12 12:37:59 WARN  Build server is not auto-connectable.
+2024.01.12 12:38:09 WARN  no build target for: C:\URV\Progra\RepositorioGitHub\scalaTAP\src\main\scala\example\Hello.scala
+2024.01.12 12:38:11 INFO  no build target found for C:\URV\Progra\RepositorioGitHub\scalaTAP\src\main\scala\example\Hello.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.01.12 12:38:13 INFO  time: code lens generation in 1.71s
+2024.01.12 12:38:13 INFO  time: code lens generation in 2.86s
+2024.01.12 12:46:16 INFO  Shutting down server
+2024.01.12 12:46:16 INFO  shutting down Metals
+2024.01.12 12:46:16 INFO  Exiting server
+2024.01.12 12:51:45 INFO  Started: Metals version 1.2.0 in folders 'C:\URV\Progra\RepositorioGitHub\scalaTAP' for client Visual Studio Code 1.85.1.
+2024.01.12 12:51:46 WARN  Build server is not auto-connectable.
+2024.01.12 12:51:46 WARN  no build target for: C:\URV\Progra\RepositorioGitHub\scalaTAP\src\main\scala\example\Hello.scala
+2024.01.12 12:51:49 INFO  no build target found for C:\URV\Progra\RepositorioGitHub\scalaTAP\src\main\scala\example\Hello.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.01.12 12:51:51 INFO  time: code lens generation in 4.28s
+2024.01.12 12:51:51 INFO  time: code lens generation in 3.95s
+2024.01.12 12:51:53 INFO  running 'C:\Program Files\Java\jdk-21\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\adria\AppData\Local\Temp\metals1600741332812743875\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.01.12 12:51:55 INFO  [info] welcome to sbt 1.9.7 (Oracle Corporation Java 21.0.1)
+2024.01.12 12:51:56 INFO  [info] loading settings for project scalatap-build-build from metals.sbt ...
+2024.01.12 12:51:56 INFO  [info] loading project definition from C:\URV\Progra\RepositorioGitHub\scalaTAP\project\project
+2024.01.12 12:51:58 INFO  [info] loading settings for project scalatap-build from metals.sbt ...
+2024.01.12 12:51:58 INFO  [info] loading project definition from C:\URV\Progra\RepositorioGitHub\scalaTAP\project
+2024.01.12 12:52:00 INFO  [success] Generated .bloop\scalatap-build.json
+2024.01.12 12:52:00 INFO  [info] compiling 1 Scala source to C:\URV\Progra\RepositorioGitHub\scalaTAP\project\target\scala-2.12\sbt-1.0\classes ...
+2024.01.12 12:52:03 INFO  [info] done compiling
+2024.01.12 12:52:03 INFO  [success] Total time: 4 s, completed 12 ene 2024, 12:52:03
+2024.01.12 12:52:04 INFO  [info] loading settings for project root from build.sbt ...
+2024.01.12 12:52:04 INFO  [info] set current project to Scala Seed Project (in build file:/C:/URV/Progra/RepositorioGitHub/scalaTAP/)
+2024.01.12 12:52:04 INFO  [success] Generated .bloop\root-test.json
+2024.01.12 12:52:04 INFO  [success] Generated .bloop\root.json
+2024.01.12 12:52:04 INFO  [success] Total time: 1 s, completed 12 ene 2024, 12:52:05
+2024.01.12 12:52:05 INFO  time: ran 'sbt bloopInstall' in 11s
+2024.01.12 12:52:05 INFO  Attempting to connect to the build server...
+2024.01.12 12:52:05 INFO  Bloop uses C:\Program Files\Java\jdk-21 defined at C:\Users\adria\.bloop\bloop.json
+2024.01.12 12:52:08 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\URV\Progra\RepositorioGitHub\scalaTAP\.metals\bsp.trace.json or C:\Users\adria\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.01.12 12:52:08 INFO  Attempting to connect to the build server...
+2024.01.12 12:52:08 INFO  Bloop uses C:\Program Files\Java\jdk-21 defined at C:\Users\adria\.bloop\bloop.json
+2024.01.12 12:52:08 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\URV\Progra\RepositorioGitHub\scalaTAP\project\.metals\bsp.trace.json or C:\Users\adria\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.01.12 12:52:08 INFO  time: Connected to build server in 3.52s
+2024.01.12 12:52:08 INFO  Connected to Build server: Bloop v1.5.13
+2024.01.12 12:52:09 INFO  time: Imported build in 0.14s
+2024.01.12 12:52:13 INFO  time: indexed workspace in 3.81s
+2024.01.12 12:52:13 INFO  compiling root (1 scala source)
+2024.01.12 12:52:16 INFO  compiling root-test (1 scala source)
+2024.01.12 12:52:16 INFO  time: compiled root in 2.91s
+2024.01.12 12:52:16 INFO  time: compiled root-test in 0.63s
+ene 12, 2024 12:54:17 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
