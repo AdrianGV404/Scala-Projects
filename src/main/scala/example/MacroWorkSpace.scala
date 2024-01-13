@@ -167,3 +167,10 @@ class GreedyGroup extends Policy {
     Map.empty[Invoker, Seq[Action]]
   }
 }
+object WordCount extends App{
+  println(
+    args(0)
+    .split("")
+    .groupBy(x=>x)
+    .map(t=>t._1->t._2.length))
+}
