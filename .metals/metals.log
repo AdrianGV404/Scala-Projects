@@ -1312,3 +1312,76 @@ WARNING: Unmatched cancel notification for request id 140
 2024.01.13 15:07:07 INFO  time: compiled root in 0.27s
 ene 13, 2024 3:07:16 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2024.01.13 15:07:52 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\URV\Progra\RepositorioGitHub\scalaTAP\.metals\dap-server.trace.json or C:\Users\adria\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.13 15:07:52 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\URV\Progra\RepositorioGitHub\scalaTAP\.metals\dap-client.trace.json or C:\Users\adria\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.13 15:07:52 INFO  Starting debug proxy for [example.Tests()]
+2024.01.13 15:07:53 INFO  Trying to attach to remote debuggee VM 127.0.0.1:63541 .
+2024.01.13 15:07:53 INFO  Attaching to debuggee VM succeeded.
+2024.01.13 15:07:53 INFO  Canceling debug proxy for [example.Tests()]
+2024.01.13 15:07:53 INFO  Closing debug server tcp://0.0.0.0:63536
+2024.01.13 15:08:12 INFO  compiling root-test (1 scala source)
+2024.01.13 15:08:12 INFO  time: compiled root-test in 0.48s
+2024.01.13 15:08:14 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\URV\Progra\RepositorioGitHub\scalaTAP\.metals\dap-server.trace.json or C:\Users\adria\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.13 15:08:14 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\URV\Progra\RepositorioGitHub\scalaTAP\.metals\dap-client.trace.json or C:\Users\adria\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.13 15:08:14 INFO  Starting debug proxy for [example.Tests()]
+2024.01.13 15:08:14 INFO  Trying to attach to remote debuggee VM 127.0.0.1:63551 .
+2024.01.13 15:08:14 INFO  Attaching to debuggee VM succeeded.
+2024.01.13 15:08:14 INFO  Canceling debug proxy for [example.Tests()]
+2024.01.13 15:08:14 INFO  Closing debug server tcp://0.0.0.0:63548
+2024.01.13 15:08:22 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\URV\Progra\RepositorioGitHub\scalaTAP\.metals\dap-server.trace.json or C:\Users\adria\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.13 15:08:22 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\URV\Progra\RepositorioGitHub\scalaTAP\.metals\dap-client.trace.json or C:\Users\adria\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.13 15:08:22 INFO  Starting debug proxy for [example.Tests()]
+2024.01.13 15:08:22 INFO  Trying to attach to remote debuggee VM 127.0.0.1:63561 .
+2024.01.13 15:08:22 INFO  Attaching to debuggee VM succeeded.
+2024.01.13 15:08:22 INFO  Canceling debug proxy for [example.Tests()]
+2024.01.13 15:08:22 INFO  Closing debug server tcp://0.0.0.0:63558
+2024.01.13 15:24:36 INFO  compiling root-test (1 scala source)
+2024.01.13 15:24:36 INFO  time: compiled root-test in 69ms
+2024.01.13 15:24:39 INFO  compiling root-test (1 scala source)
+2024.01.13 15:24:39 INFO  time: compiled root-test in 68ms
+2024.01.13 15:24:51 INFO  compiling root (1 scala source)
+2024.01.13 15:24:51 INFO  time: compiled root in 98ms
+2024.01.13 15:24:54 INFO  compiling root (1 scala source)
+2024.01.13 15:24:54 INFO  time: compiled root in 0.13s
+2024.01.13 15:24:59 INFO  compiling root (1 scala source)
+2024.01.13 15:24:59 INFO  time: compiled root in 0.69s
+2024.01.13 15:24:59 INFO  compiling root (1 scala source)
+2024.01.13 15:24:59 INFO  time: compiled root in 0.25s
+2024.01.13 15:25:05 INFO  compiling root (1 scala source)
+2024.01.13 15:25:05 INFO  time: compiled root in 80ms
+2024.01.13 15:25:07 INFO  compiling root (1 scala source)
+2024.01.13 15:25:07 INFO  time: compiled root in 78ms
+2024.01.13 15:25:09 INFO  compiling root (1 scala source)
+2024.01.13 15:25:09 INFO  time: compiled root in 82ms
+2024.01.13 15:25:16 INFO  compiling root (1 scala source)
+2024.01.13 15:25:16 INFO  time: compiled root in 45ms
+2024.01.13 15:25:18 INFO  compiling root (1 scala source)
+2024.01.13 15:25:18 INFO  time: compiled root in 79ms
+2024.01.13 15:25:19 INFO  compiling root (1 scala source)
+2024.01.13 15:25:19 INFO  time: compiled root in 95ms
+2024.01.13 15:25:19 INFO  compiling root (1 scala source)
+2024.01.13 15:25:19 INFO  time: compiled root in 62ms
+2024.01.13 15:25:23 INFO  compiling root (1 scala source)
+2024.01.13 15:25:23 INFO  time: compiled root in 74ms
+2024.01.13 15:25:36 INFO  compiling root (1 scala source)
+2024.01.13 15:25:36 INFO  time: compiled root in 74ms
+2024.01.13 15:25:42 INFO  compiling root (1 scala source)
+2024.01.13 15:25:42 INFO  time: compiled root in 0.64s
+2024.01.13 15:44:22 INFO  compiling root-test (1 scala source)
+2024.01.13 15:44:22 INFO  time: compiled root-test in 71ms
+2024.01.13 15:44:31 INFO  compiling root-test (1 scala source)
+2024.01.13 15:44:31 INFO  time: compiled root-test in 0.37s
+2024.01.13 15:44:32 INFO  compiling root-test (1 scala source)
+2024.01.13 15:44:32 INFO  time: compiled root-test in 99ms
+2024.01.13 15:44:36 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\URV\Progra\RepositorioGitHub\scalaTAP\.metals\dap-server.trace.json or C:\Users\adria\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.13 15:44:36 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\URV\Progra\RepositorioGitHub\scalaTAP\.metals\dap-client.trace.json or C:\Users\adria\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.13 15:44:36 INFO  Starting debug proxy for [example.Tests()]
+2024.01.13 15:44:36 INFO  Trying to attach to remote debuggee VM 127.0.0.1:64256 .
+2024.01.13 15:44:36 INFO  Attaching to debuggee VM succeeded.
+2024.01.13 15:44:37 INFO  Canceling debug proxy for [example.Tests()]
+2024.01.13 15:44:36 INFO  Closing debug server tcp://0.0.0.0:64253
+2024.01.13 15:44:39 INFO  Shutting down server
+2024.01.13 15:44:39 INFO  shutting down Metals
+2024.01.13 15:44:39 INFO  Shut down connection with build server.
+2024.01.13 15:44:39 INFO  Shut down connection with build server.
+2024.01.13 15:44:39 INFO  Exiting server

@@ -32,5 +32,5 @@ class Tests extends munit.FunSuite {
   controller.executeActions()
 
   // Execute actions assigned to the controller (with threads)
-  // controller.executeActionsWithThreads()
+  controller.executeActionsWithThreads()
 }
