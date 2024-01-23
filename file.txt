@@ -1,0 +1,1 @@
+This is an example text. It contains some words and we want to count the occurrences of each word. is to, of
