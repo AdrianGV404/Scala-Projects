@@ -1,4 +1,5 @@
-package main
+package main.scala
+
 import scala.io.Source
 import java.io.FileNotFoundException
 import java.io.IOException

@@ -1,7 +1,7 @@
-package test
+package test.scala
 
-import main.ScalaFunctions
-import main.Singleton
+import main.scala.ScalaFunctions
+import main.scala.Singleton
 import munit.FunSuite
 
 class Tests extends FunSuite {

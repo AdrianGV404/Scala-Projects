@@ -1,4 +1,4 @@
-package main
+package main.scala
 
 /**
  * Singleton object representing a controller with an ID.
