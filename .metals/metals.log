@@ -1394,3 +1394,26 @@ WARNING: Unmatched cancel notification for request id 1
 ene 23, 2024 2:11:33 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 2
 2024.01.23 14:11:33 WARN  no build target for: C:\URV\Progra\RepositorioGitHub\Scala-Projects\src\main\scala\example\MacroWorkSpace.scala
+2024.01.23 14:11:35 WARN  no build target for: C:\URV\Progra\RepositorioGitHub\Scala-Projects\src\main\scala\example\MacroWorkSpace.scala
+2024.01.23 14:11:36 INFO  no build target found for C:\URV\Progra\RepositorioGitHub\Scala-Projects\src\main\scala\example\MacroWorkSpace.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.01.23 14:11:37 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\URV\Progra\RepositorioGitHub\Scala-Projects\.metals\bsp.trace.json or C:\Users\adria\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.01.23 14:11:37 INFO  Attempting to connect to the build server...
+2024.01.23 14:11:37 INFO  Bloop uses C:\Program Files\Java\jdk-21 defined at C:\Users\adria\.bloop\bloop.json
+2024.01.23 14:11:37 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\URV\Progra\RepositorioGitHub\Scala-Projects\project\.metals\bsp.trace.json or C:\Users\adria\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.01.23 14:11:37 INFO  time: Connected to build server in 4.38s
+2024.01.23 14:11:37 INFO  Connected to Build server: Bloop v1.5.13
+2024.01.23 14:11:38 INFO  time: Imported build in 0.14s
+2024.01.23 14:11:39 INFO  no build target found for C:\URV\Progra\RepositorioGitHub\Scala-Projects\src\main\scala\example\MacroWorkSpace.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.01.23 14:11:40 INFO  no build target found for C:\URV\Progra\RepositorioGitHub\Scala-Projects\src\main\scala\example\MacroWorkSpace.scala. Using presentation compiler with project's scala-library version: 2.13.12
+2024.01.23 14:11:40 INFO  time: indexed workspace in 2.88s
+2024.01.23 14:11:40 WARN  no build target for: C:\URV\Progra\RepositorioGitHub\Scala-Projects\src\main\scala\example\MacroWorkSpace.scala
+2024.01.23 14:11:40 WARN  no build target for: C:\URV\Progra\RepositorioGitHub\Scala-Projects\src\main\scala\example\MacroWorkSpace.scala
+2024.01.23 14:11:41 WARN  no build target for: C:\URV\Progra\RepositorioGitHub\Scala-Projects\src\main\scala\example\MacroWorkSpace.scala
+2024.01.23 14:11:44 WARN  no build target for: C:\URV\Progra\RepositorioGitHub\Scala-Projects\src\main\scala\example\MacroWorkSpace.scala
+2024.01.23 14:11:45 WARN  no build target for: C:\URV\Progra\RepositorioGitHub\Scala-Projects\src\test\scala\example\Tests.scala
+2024.01.23 14:11:48 WARN  no build target for: C:\URV\Progra\RepositorioGitHub\Scala-Projects\src\test\scala\example\Tests.scala
+2024.01.23 14:11:51 WARN  no build target for: C:\URV\Progra\RepositorioGitHub\Scala-Projects\src\main\scala\example\MacroWorkSpace.scala
+2024.01.23 14:12:03 WARN  no build target for: C:\URV\Progra\RepositorioGitHub\Scala-Projects\src\main\scala\example\MacroWorkSpace.scala
+2024.01.23 14:12:06 WARN  no build target for: C:\URV\Progra\RepositorioGitHub\Scala-Projects\src\main\scala\example\MacroWorkSpace.scala
+ene 23, 2024 2:12:07 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
