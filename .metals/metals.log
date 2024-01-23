@@ -6541,3 +6541,5 @@ Exception in thread "pool-6-thread-1" java.lang.InterruptedException
 2024.01.23 16:35:23 WARN  no build target for: C:\URV\Progra\RepositorioGitHub\Scala-Projects\src\main\Controller.java
 ene 23, 2024 4:35:23 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 166
+ene 23, 2024 4:35:36 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
