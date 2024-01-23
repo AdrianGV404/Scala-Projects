@@ -13,17 +13,17 @@ class Tests extends FunSuite {
   )
 
   // Get word count and total word count
-  val counts: Map[String, Int] = MacroWorkSpace.wordCount(sampleTexts)
-  val totalWords: Int = MacroWorkSpace.countWords(sampleTexts)
+  val wordCount: Map[String, Int] = MacroWorkSpace.wordCount(sampleTexts)
+  val countWords: Int = MacroWorkSpace.countWords(sampleTexts)
 
   test("word count test") {
     // Assert that the word count for specific words is as expected
-    assertEquals(counts.getOrElse("this", 1), 1)
-    assertEquals(counts.getOrElse("example", 1), 1)
-    assertEquals(counts.getOrElse("to", 2), 2)
-    assertEquals(counts.getOrElse("of", 2), 2)
+    assertEquals(wordCount.getOrElse("this", 1), 1)
+    assertEquals(wordCount.getOrElse("example", 1), 1)
+    assertEquals(wordCount.getOrElse("to", 2), 2)
+    assertEquals(wordCount.getOrElse("of", 2), 2)
 
     // Assert that the total word count is as expected
-    assertEquals(totalWords, 22)
+    assertEquals(countWords, 22)
   }
 }
