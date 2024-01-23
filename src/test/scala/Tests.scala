@@ -1,6 +1,7 @@
 package test
 
 import main.MacroWorkSpace
+import main.Singleton
 import munit.FunSuite
 
 class Tests extends FunSuite {
@@ -75,5 +76,19 @@ class Tests extends FunSuite {
     
     // Assert that the total word count is as expected
     assertEquals(countWords, 9)
+  }
+
+  test("Singleton is the only instance") {
+    // Verify that the ID of the default instance is as expected
+    assertEquals(Singleton.getId, "SingletonId")
+
+    // Create a new instance of Singleton with a custom ID using the create method
+    val customSingletonId = "CustomSingletonId"
+    val mySingleton = Singleton.create(customSingletonId)
+
+    // Verify that the ID of the new instance is the custom ID
+    assertEquals(mySingleton.getId, customSingletonId)
+    // Verify that the ID of the default instance is the new one
+    assertEquals(Singleton.getId, customSingletonId)
   }
 }
