@@ -1417,3 +1417,12 @@ WARNING: Unmatched cancel notification for request id 2
 2024.01.23 14:12:06 WARN  no build target for: C:\URV\Progra\RepositorioGitHub\Scala-Projects\src\main\scala\example\MacroWorkSpace.scala
 ene 23, 2024 2:12:07 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+ene 23, 2024 2:12:27 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 100
+ene 23, 2024 2:12:38 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 106
+2024.01.23 14:23:18 INFO  Shutting down server
+2024.01.23 14:23:18 INFO  shutting down Metals
+2024.01.23 14:23:18 INFO  Shut down connection with build server.
+2024.01.23 14:23:18 INFO  Shut down connection with build server.
+2024.01.23 14:23:18 INFO  Exiting server
