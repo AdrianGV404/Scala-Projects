@@ -1,17 +1,17 @@
 {
     "version": "1.4.0",
     "project": {
-        "name": "scalatap-build",
-        "directory": "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\project",
-        "workspaceDir": "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\project",
+        "name": "scala-projects-build",
+        "directory": "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\project",
+        "workspaceDir": "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\project",
         "sources": [
-            "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\project\\src\\main\\scala",
-            "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\project\\src\\main\\scala-2.12",
-            "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\project\\src\\main\\scala-2",
-            "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\project\\src\\main\\java",
-            "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\project\\src\\main\\scala-sbt-1.0",
-            "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\project\\target\\scala-2.12\\sbt-1.0\\src_managed\\main",
-            "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\project\\Dependencies.scala"
+            "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\project\\src\\main\\scala",
+            "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\project\\src\\main\\scala-2.12",
+            "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\project\\src\\main\\scala-2",
+            "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\project\\src\\main\\java",
+            "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\project\\src\\main\\scala-sbt-1.0",
+            "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\project\\target\\scala-2.12\\sbt-1.0\\src_managed\\main",
+            "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\project\\Dependencies.scala"
         ],
         "dependencies": [
             
@@ -104,11 +104,11 @@
             "C:\\Users\\adria\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\reactivestreams\\reactive-streams\\1.0.3\\reactive-streams-1.0.3.jar",
             "C:\\Users\\adria\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\config\\1.4.2\\config-1.4.2.jar"
         ],
-        "out": "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\project\\.bloop\\scalatap-build",
-        "classesDir": "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\project\\.bloop\\scalatap-build\\scala-2.12\\sbt-1.0\\classes",
+        "out": "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\project\\.bloop\\scala-projects-build",
+        "classesDir": "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\project\\.bloop\\scala-projects-build\\scala-2.12\\sbt-1.0\\classes",
         "resources": [
-            "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\project\\src\\main\\resources",
-            "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\project\\target\\scala-2.12\\sbt-1.0\\resource_managed\\main"
+            "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\project\\src\\main\\resources",
+            "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\project\\target\\scala-2.12\\sbt-1.0\\resource_managed\\main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -215,7 +215,7 @@
             "config": {
                 "home": "C:\\Program Files\\Java\\jdk-21",
                 "options": [
-                    "-Duser.dir=C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\project"
+                    "-Duser.dir=C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\project"
                 ]
             },
             "mainClass": [
@@ -224,11 +224,11 @@
             "runtimeConfig": {
                 "home": "C:\\Program Files\\Java\\jdk-21",
                 "options": [
-                    "-Duser.dir=C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\project"
+                    "-Duser.dir=C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\project"
                 ]
             },
             "classpath": [
-                "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\project\\.bloop\\scalatap-build\\scala-2.12\\sbt-1.0\\classes",
+                "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\project\\.bloop\\scala-projects-build\\scala-2.12\\sbt-1.0\\classes",
                 "C:\\Users\\adria\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.5.13\\sbt-bloop_2.12_1.0-1.5.13.jar",
                 "C:\\Users\\adria\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\bloop-config_2.12\\1.5.5\\bloop-config_2.12-1.5.5.jar",
                 "C:\\Users\\adria\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\plokhotnyuk\\jsoniter-scala\\jsoniter-scala-core_2.12\\2.4.0\\jsoniter-scala-core_2.12-2.4.0.jar",

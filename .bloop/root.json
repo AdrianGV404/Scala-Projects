@@ -2,14 +2,14 @@
     "version": "1.4.0",
     "project": {
         "name": "root",
-        "directory": "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP",
-        "workspaceDir": "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP",
+        "directory": "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects",
+        "workspaceDir": "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects",
         "sources": [
-            "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\src\\main\\scala",
-            "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\src\\main\\scala-2.13",
-            "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\src\\main\\scala-2",
-            "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\src\\main\\java",
-            "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\target\\scala-2.13\\src_managed\\main"
+            "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\src\\main\\scala",
+            "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\src\\main\\scala-2.13",
+            "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\src\\main\\scala-2",
+            "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\src\\main\\java",
+            "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\target\\scala-2.13\\src_managed\\main"
         ],
         "dependencies": [
             
@@ -17,11 +17,11 @@
         "classpath": [
             "C:\\Users\\adria\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.12\\scala-library-2.13.12.jar"
         ],
-        "out": "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\.bloop\\root",
-        "classesDir": "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\.bloop\\root\\scala-2.13\\classes",
+        "out": "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\.bloop\\root",
+        "classesDir": "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\.bloop\\root\\scala-2.13\\classes",
         "resources": [
-            "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\src\\main\\resources",
-            "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\target\\scala-2.13\\resource_managed\\main"
+            "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\src\\main\\resources",
+            "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\target\\scala-2.13\\resource_managed\\main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -116,7 +116,7 @@
             "config": {
                 "home": "C:\\Program Files\\Java\\jdk-21",
                 "options": [
-                    "-Duser.dir=C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP"
+                    "-Duser.dir=C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects"
                 ]
             },
             "mainClass": [
@@ -125,11 +125,11 @@
             "runtimeConfig": {
                 "home": "C:\\Program Files\\Java\\jdk-21",
                 "options": [
-                    "-Duser.dir=C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP"
+                    "-Duser.dir=C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects"
                 ]
             },
             "classpath": [
-                "C:\\URV\\Progra\\RepositorioGitHub\\scalaTAP\\.bloop\\root\\scala-2.13\\classes",
+                "C:\\URV\\Progra\\RepositorioGitHub\\Scala-Projects\\.bloop\\root\\scala-2.13\\classes",
                 "C:\\Users\\adria\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.12\\scala-library-2.13.12.jar"
             ]
         },
