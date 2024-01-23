@@ -1,6 +1,6 @@
 package test
 
-import main.MacroWorkSpace
+import main.ScalaFunctions
 import main.Singleton
 import munit.FunSuite
 
@@ -16,8 +16,8 @@ class Tests extends FunSuite {
     )
 
     // Get word count and total word count
-    val wordCount: Map[String, Int] = MacroWorkSpace.wordCount(Left(sampleTexts))
-    val countWords: Int = MacroWorkSpace.countWords(Left(sampleTexts))
+    val wordCount: Map[String, Int] = ScalaFunctions.wordCount(Left(sampleTexts))
+    val countWords: Int = ScalaFunctions.countWords(Left(sampleTexts))
 
     // Assert that the word count for specific words is as expected
     assertEquals(wordCount.getOrElse("this", 1), 1)
@@ -33,11 +33,11 @@ class Tests extends FunSuite {
     // Create a temporary file with some content for testing
     val filePath = "file.txt"
 
-    val fileContent = MacroWorkSpace.readText(filePath)
+    val fileContent = ScalaFunctions.readText(filePath)
     println(s"File Content:\n$fileContent")
 
-    val wordCount: Map[String, Int] = MacroWorkSpace.wordCount(Right(fileContent))
-    val countWords: Int = MacroWorkSpace.countWords(Right(fileContent))
+    val wordCount: Map[String, Int] = ScalaFunctions.wordCount(Right(fileContent))
+    val countWords: Int = ScalaFunctions.countWords(Right(fileContent))
 
     // Assert that the word count for specific words is as expected
     assertEquals(wordCount.getOrElse("this", 1), 1)
@@ -61,11 +61,11 @@ class Tests extends FunSuite {
     )
 
     // Read content from the temporary file using readText function
-    val fileContent = MacroWorkSpace.readText(tempFilePath)
+    val fileContent = ScalaFunctions.readText(tempFilePath)
     println(s"File Content:\n$fileContent")
 
-    val wordCount: Map[String, Int] = MacroWorkSpace.wordCount(Right(fileContent))
-    val countWords: Int = MacroWorkSpace.countWords(Right(fileContent))
+    val wordCount: Map[String, Int] = ScalaFunctions.wordCount(Right(fileContent))
+    val countWords: Int = ScalaFunctions.countWords(Right(fileContent))
     // Assert that the content read from the file is the same as expected
     assertEquals(fileContent, tempFileContent)    
     assertEquals(wordCount.getOrElse("this", 2), 2)
@@ -90,5 +90,9 @@ class Tests extends FunSuite {
     assertEquals(mySingleton.getId, customSingletonId)
     // Verify that the ID of the default instance is the new one
     assertEquals(Singleton.getId, customSingletonId)
+  }
+
+    test("Java Functions Working") {
+      
   }
 }

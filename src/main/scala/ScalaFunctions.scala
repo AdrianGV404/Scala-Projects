@@ -3,7 +3,7 @@ import scala.io.Source
 import java.io.FileNotFoundException
 import java.io.IOException
 
-object MacroWorkSpace extends App {
+object ScalaFunctions extends App {
   /**
    * Counts the number of occurrences of each word in a list of texts or a single text.
    *
