@@ -6543,3 +6543,106 @@ ene 23, 2024 4:35:23 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCance
 WARNING: Unmatched cancel notification for request id 166
 ene 23, 2024 4:35:36 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+Exception in thread "pool-14-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024.01.23 16:37:37 INFO  compiling root (1 scala source)
+2024.01.23 16:37:37 INFO  time: compiled root in 73ms
+2024.01.23 16:37:45 INFO  compiling root (1 scala source)
+2024.01.23 16:37:45 INFO  time: compiled root in 42ms
+2024.01.23 16:37:45 INFO  compiling root (1 scala source)
+2024.01.23 16:37:45 INFO  time: compiled root in 27ms
+2024.01.23 16:37:49 INFO  compiling root (1 scala source)
+2024.01.23 16:37:49 INFO  time: compiled root in 47ms
+2024.01.23 16:37:57 WARN  no build target for: C:\URV\Progra\RepositorioGitHub\Scala-Projects\src\main\Controller.java
+2024.01.23 16:38:04 WARN  Using indexes to guess the definition of main
+2024.01.23 16:38:04 WARN  Using indexes to guess the definition of ScalaFunctions
+2024.01.23 16:38:04 INFO  compiling root (1 scala source)
+2024.01.23 16:38:04 INFO  time: compiled root in 44ms
+2024.01.23 16:38:05 WARN  Using indexes to guess the definition of ScalaFunctions
+2024.01.23 16:38:04 INFO  compiling root (1 scala source)
+2024.01.23 16:38:04 INFO  time: compiled root in 24ms
+2024.01.23 16:38:27 INFO  compiling root (1 scala source)
+2024.01.23 16:38:27 INFO  time: compiled root in 40ms
+2024.01.23 16:38:30 INFO  compiling root (1 scala source)
+2024.01.23 16:38:30 INFO  time: compiled root in 38ms
+2024.01.23 16:38:34 INFO  compiling root (1 scala source)
+2024.01.23 16:38:34 INFO  time: compiled root in 38ms
+2024.01.23 16:38:40 INFO  compiling root (1 scala source)
+2024.01.23 16:38:40 INFO  time: compiled root in 39ms
+2024.01.23 16:38:43 INFO  compiling root (1 scala source)
+2024.01.23 16:38:43 INFO  time: compiled root in 40ms
+2024.01.23 16:38:45 INFO  compiling root (1 scala source)
+2024.01.23 16:38:45 INFO  time: compiled root in 39ms
+2024.01.23 16:38:47 WARN  Using indexes to guess the definition of Controller
+2024.01.23 16:38:48 INFO  compiling root (1 scala source)
+2024.01.23 16:38:48 INFO  time: compiled root in 38ms
+2024.01.23 16:39:15 INFO  compiling root (1 scala source)
+2024.01.23 16:39:15 INFO  time: compiled root in 49ms
+2024.01.23 16:39:18 INFO  compiling root (1 scala source)
+2024.01.23 16:39:18 INFO  time: compiled root in 55ms
+2024.01.23 16:39:18 INFO  compiling root (1 scala source)
+2024.01.23 16:39:18 INFO  time: compiled root in 30ms
+2024.01.23 16:39:20 INFO  compiling root (1 scala source)
+2024.01.23 16:39:20 INFO  time: compiled root in 48ms
+2024.01.23 16:39:30 INFO  compiling root (1 scala source)
+2024.01.23 16:39:30 INFO  time: compiled root in 45ms
+2024.01.23 16:39:35 INFO  compiling root (1 scala source)
+2024.01.23 16:39:35 INFO  time: compiled root in 47ms
+2024.01.23 16:40:04 INFO  compiling root (1 scala source)
+2024.01.23 16:40:04 INFO  time: compiled root in 48ms
+2024.01.23 16:40:10 INFO  compiling root (1 scala source)
+2024.01.23 16:40:10 INFO  time: compiled root in 31ms
+2024.01.23 16:40:13 INFO  compiling root (1 scala source)
+2024.01.23 16:40:13 INFO  time: compiled root in 48ms
+2024.01.23 16:40:13 INFO  compiling root (1 scala source)
+2024.01.23 16:40:13 INFO  time: compiled root in 15ms
+2024.01.23 16:40:16 INFO  compiling root (1 scala source)
+2024.01.23 16:40:16 INFO  time: compiled root in 32ms
+2024.01.23 16:40:20 INFO  compiling root (1 scala source)
+2024.01.23 16:40:20 INFO  time: compiled root in 50ms
+2024.01.23 16:40:22 INFO  compiling root (1 scala source)
+2024.01.23 16:40:22 INFO  time: compiled root in 33ms
+2024.01.23 16:40:27 INFO  compiling root (1 scala source)
+2024.01.23 16:40:27 INFO  time: compiled root in 46ms
+2024.01.23 16:40:39 INFO  compiling root (1 scala source)
+2024.01.23 16:40:39 INFO  time: compiled root in 48ms
+2024.01.23 16:40:42 INFO  compiling root (1 scala source)
+2024.01.23 16:40:42 INFO  time: compiled root in 32ms
+2024.01.23 16:40:50 INFO  compiling root (1 scala source)
+2024.01.23 16:40:50 INFO  time: compiled root in 34ms
+2024.01.23 16:40:52 INFO  compiling root (1 scala source)
+2024.01.23 16:40:52 INFO  time: compiled root in 47ms
+2024.01.23 16:40:54 INFO  compiling root (1 scala source)
+2024.01.23 16:40:54 INFO  time: compiled root in 48ms
+2024.01.23 16:40:55 INFO  compiling root (1 scala source)
+2024.01.23 16:40:55 INFO  time: compiled root in 31ms
+2024.01.23 16:41:02 WARN  no build target for: C:\URV\Progra\RepositorioGitHub\Scala-Projects\src\main\Action.java
+2024.01.23 16:41:04 WARN  no build target for: C:\URV\Progra\RepositorioGitHub\Scala-Projects\src\main\policy\BigGroup.java
+2024.01.23 16:41:06 WARN  no build target for: C:\URV\Progra\RepositorioGitHub\Scala-Projects\src\main\Action.java
+2024.01.23 16:41:11 INFO  compiling root (1 scala source)
+2024.01.23 16:41:11 INFO  time: compiled root in 51ms
+2024.01.23 16:42:14 INFO  compiling root (1 scala source)
+2024.01.23 16:42:14 INFO  time: compiled root in 48ms
+2024.01.23 16:42:21 INFO  compiling root (1 scala source)
+2024.01.23 16:42:21 INFO  time: compiled root in 48ms
+Exception in thread "pool-14-thread-2" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024.01.23 16:43:22 INFO  compiling root (1 scala source)
+2024.01.23 16:43:22 INFO  time: compiled root in 44ms
+ene 23, 2024 4:44:53 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 755
+2024.01.23 16:45:01 INFO  compiling root (1 scala source)
+2024.01.23 16:45:01 INFO  compiling root (1 scala source)
+2024.01.23 16:45:01 INFO  time: compiled root in 0.31s
+2024.01.23 16:45:08 INFO  compiling root (1 scala source)
+2024.01.23 16:45:08 INFO  time: compiled root in 0.28s
