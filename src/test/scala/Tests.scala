@@ -4,21 +4,26 @@ import main.MacroWorkSpace
 import munit.FunSuite
 
 class Tests extends FunSuite {
-  // String text to be read
-  val sampleText: String =
-    "This is an example text. It contains some words, and we want to count the occurrences of each word."
+  // List of strings to be read
+  val sampleTexts: List[String] = List(
+    "This is an example text.",
+    "It contains some words,",
+    "and we want to count the occurrences of each word.",
+    "is to, of"
+  )
 
-  // Print word count and total word count
-  val counts: Map[String, Int] = MacroWorkSpace.wordCount(sampleText)
-  val totalWords: Int = MacroWorkSpace.countWords(sampleText)
+  // Get word count and total word count
+  val counts: Map[String, Int] = MacroWorkSpace.wordCount(sampleTexts)
+  val totalWords: Int = MacroWorkSpace.countWords(sampleTexts)
 
   test("word count test") {
-    println("Word Count:")
-    counts.foreach { case (word, count) =>
-      println(s"$word: $count")
-    }
+    // Assert that the word count for specific words is as expected
+    assertEquals(counts.getOrElse("this", 1), 1)
+    assertEquals(counts.getOrElse("example", 1), 1)
+    assertEquals(counts.getOrElse("to", 2), 2)
+    assertEquals(counts.getOrElse("of", 2), 2)
 
-    println(s"\nTotal Words: $totalWords")
-    // Add your assertions here based on the expected results
+    // Assert that the total word count is as expected
+    assertEquals(totalWords, 22)
   }
 }
