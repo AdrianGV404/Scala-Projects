@@ -2,6 +2,7 @@ package test.scala
 
 import main.scala.ScalaFunctions
 import main.scala.Singleton
+import scala.composite
 import munit.FunSuite
 import main.java.{Controller, Invoker, Action, Metric}
 import main.java.reflection.{ActionProxy,DynamicProxy}
