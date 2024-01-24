@@ -6646,3 +6646,46 @@ WARNING: Unmatched cancel notification for request id 755
 2024.01.23 16:45:01 INFO  time: compiled root in 0.31s
 2024.01.23 16:45:08 INFO  compiling root (1 scala source)
 2024.01.23 16:45:08 INFO  time: compiled root in 0.28s
+2024.01.23 16:48:35 INFO  Shutting down server
+2024.01.23 16:48:35 INFO  shutting down Metals
+2024.01.23 16:48:35 INFO  Shut down connection with build server.
+2024.01.23 16:48:35 INFO  Shut down connection with build server.
+2024.01.23 16:48:35 INFO  Exiting server
+2024.01.24 11:41:41 INFO  Started: Metals version 1.2.0 in folders 'C:\URV\Progra\RepositorioGitHub\Scala-Projects' for client Visual Studio Code 1.85.2.
+2024.01.24 11:41:42 INFO  Attempting to connect to the build server...
+2024.01.24 11:41:42 INFO  Bloop uses C:\Program Files\Java\jdk-21 defined at C:\Users\adria\.bloop\bloop.json
+2024.01.24 11:41:42 INFO  skipping build import with status 'Failed'
+2024.01.24 11:41:46 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\URV\Progra\RepositorioGitHub\Scala-Projects\.metals\bsp.trace.json or C:\Users\adria\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.01.24 11:41:46 INFO  Attempting to connect to the build server...
+2024.01.24 11:41:46 INFO  Bloop uses C:\Program Files\Java\jdk-21 defined at C:\Users\adria\.bloop\bloop.json
+2024.01.24 11:41:46 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\URV\Progra\RepositorioGitHub\Scala-Projects\project\.metals\bsp.trace.json or C:\Users\adria\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.01.24 11:41:46 INFO  time: Connected to build server in 4.58s
+2024.01.24 11:41:46 INFO  Connected to Build server: Bloop v1.5.13
+2024.01.24 11:41:47 INFO  time: Imported build in 0.13s
+2024.01.24 11:41:50 INFO  time: indexed workspace in 3.07s
+ene 24, 2024 11:44:31 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 21
+ene 24, 2024 11:44:33 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 36
+2024.01.24 11:44:34 INFO  compiling root (1 scala source)
+2024.01.24 11:44:36 INFO  time: compiled root in 2.03s
+2024.01.24 11:45:43 INFO  compiling root (1 scala source)
+Exception in thread "pool-4-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024.01.24 11:45:43 INFO  time: compiled root in 0.2s
+2024.01.24 11:46:09 WARN  no build target for: C:\URV\Progra\RepositorioGitHub\Scala-Projects\src\main\Controller.java
+ene 24, 2024 11:46:10 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 82
+ene 24, 2024 11:46:10 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 84
+ene 24, 2024 11:46:10 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 85
+ene 24, 2024 11:46:19 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 100
+ene 24, 2024 11:46:19 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 101
