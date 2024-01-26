@@ -9059,3 +9059,11 @@ ene 26, 2024 4:09:07 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCance
 WARNING: Unmatched cancel notification for request id 91
 ene 26, 2024 4:09:10 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 100
+ene 26, 2024 4:13:43 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 514
+2024.01.26 16:14:48 INFO  compiling root-test (1 scala source)
+2024.01.26 16:14:49 INFO  time: compiled root-test in 1.46s
+2024.01.26 16:14:53 INFO  compiling root-test (1 scala source)
+2024.01.26 16:14:54 INFO  time: compiled root-test in 1.16s
+ene 26, 2024 4:15:00 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
