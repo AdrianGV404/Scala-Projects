@@ -16,7 +16,7 @@ object JavaFunctions {
     val controllerId: Int = controller.getId()
     println(s"Controller ID: $controllerId")
 
-    val invoker = new Invoker(1024, "Invoker1") 
+    val invoker = new Invoker(1024, "Invoker1")
     controller.addInvoker(invoker)
 
     val list: List[Int] = List(1, 2, 3, 4, 5)
