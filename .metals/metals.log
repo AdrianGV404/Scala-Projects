@@ -10597,3 +10597,120 @@ Exception in thread "pool-6-thread-1" java.lang.InterruptedException
 2024.01.27 15:47:56 INFO  Closing debug server tcp://0.0.0.0:53693
 ene 27, 2024 3:48:00 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 71
+ene 27, 2024 3:48:21 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 106
+Exception in thread "pool-6-thread-2" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Exception in thread "pool-6-thread-3" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Exception in thread "pool-6-thread-4" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Exception in thread "pool-6-thread-5" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+ene 27, 2024 3:48:52 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 194
+2024.01.27 15:48:52 INFO  compiling root-test (1 scala source)
+Exception in thread "pool-6-thread-6" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024.01.27 15:48:52 INFO  Deduplicating compilation of root-test from bsp client 'Metals 1.2.0' (since 2m 10.615s)
+2024.01.27 15:48:52 INFO  compiling root-test (1 scala source)
+Exception in thread "pool-6-thread-7" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024.01.27 15:48:52 INFO  time: compiled root-test in 0.54s
+2024.01.27 15:48:52 INFO  Found new symbol references for '', try running again.
+2024.01.27 15:48:53 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:48:53 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:48:53 INFO  Starting debug proxy for [test.scala.Tests(JavaFunctions Can't distribute)]
+2024.01.27 15:48:53 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53728 .
+2024.01.27 15:48:53 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:48:53 INFO  Canceling debug proxy for [test.scala.Tests(JavaFunctions Can't distribute)]
+2024.01.27 15:48:53 INFO  Closing debug server tcp://0.0.0.0:53725
+ene 27, 2024 3:48:54 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 208
+2024.01.27 15:49:21 INFO  compiling root-test (1 scala source)
+2024.01.27 15:49:21 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:49:21 INFO  time: compiled root-test in 0.57s
+2024.01.27 15:50:24 INFO  compiling root (1 scala source)
+2024.01.27 15:50:24 INFO  time: compiled root in 0.5s
+2024.01.27 15:52:03 INFO  compiling root (1 scala source)
+2024.01.27 15:52:03 INFO  time: compiled root in 99ms
+2024.01.27 15:52:04 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\main\scala\JavaFunctions.scala
+2024.01.27 15:52:09 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\main\scala\JavaFunctions.scala
+ene 27, 2024 3:52:09 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 433
+2024.01.27 15:52:09 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\main\scala\JavaFunctions.scala
+2024.01.27 15:52:09 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\main\scala\JavaFunctions.scala
+2024.01.27 15:52:10 INFO  compiling root (1 scala source)
+2024.01.27 15:52:09 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\main\scala\JavaFunctions.scala
+2024.01.27 15:52:09 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\main\scala\JavaFunctions.scala
+2024.01.27 15:52:09 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\main\scala\JavaFunctions.scala
+2024.01.27 15:52:09 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\main\scala\JavaFunctions.scala
+2024.01.27 15:52:10 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\main\scala\JavaFunctions.scala
+2024.01.27 15:52:10 INFO  time: compiled root in 0.46s
+ene 27, 2024 3:52:51 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 475
+2024.01.27 15:53:24 INFO  compiling root (1 scala source)
+2024.01.27 15:53:24 INFO  time: compiled root in 0.45s
+2024.01.27 15:54:44 INFO  compiling root (1 scala source)
+2024.01.27 15:54:44 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\main\scala\JavaFunctions.scala
+2024.01.27 15:54:44 INFO  time: compiled root in 0.52s
+ene 27, 2024 3:55:36 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 916
+2024.01.27 15:55:38 INFO  compiling root (1 scala source)
+2024.01.27 15:55:38 INFO  time: compiled root in 0.69s
+ene 27, 2024 3:57:40 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 959
+2024.01.27 15:58:00 INFO  compiling root (1 scala source)
+2024.01.27 15:58:00 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\main\scala\JavaFunctions.scala
+2024.01.27 15:58:00 INFO  time: compiled root in 0.47s
+2024.01.27 15:58:31 INFO  compiling root (1 scala source)
+2024.01.27 15:58:31 INFO  time: compiled root in 0.45s
+2024.01.27 15:59:12 INFO  compiling root (1 scala source)
+2024.01.27 15:59:12 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\main\scala\JavaFunctions.scala
+2024.01.27 15:59:12 INFO  time: compiled root in 0.46s
+Exception in thread "pool-8-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024.01.27 16:03:12 INFO  compiling root (1 scala source)
+2024.01.27 16:03:12 INFO  time: compiled root in 0.48s
+ene 27, 2024 4:03:45 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1189
+2024.01.27 16:04:44 INFO  compiling root (1 scala source)
+2024.01.27 16:04:44 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\main\scala\JavaFunctions.scala
+2024.01.27 16:04:44 INFO  time: compiled root in 0.48s
+ene 27, 2024 4:05:35 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
