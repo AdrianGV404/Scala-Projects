@@ -9867,3 +9867,47 @@ INFO: Unsupported notification method: $/setTrace
 2024.01.27 13:16:44 INFO  Shut down connection with build server.
 2024.01.27 13:16:44 INFO  Shut down connection with build server.
 2024.01.27 13:16:44 INFO  Exiting server
+2024.01.27 13:16:52 INFO  Started: Metals version 1.2.0 in folders 'C:\Users\ARNAU\Desktop\TAP\Scala-Projects' for client Visual Studio Code 1.85.2.
+2024.01.27 13:16:53 INFO  Attempting to connect to the build server...
+2024.01.27 13:16:53 INFO  Bloop uses C:\Program Files\Java\jdk-17 defined at C:\Users\ARNAU\.bloop\bloop.json
+2024.01.27 13:16:53 INFO  skipping build import with status 'Installed'
+2024.01.27 13:16:53 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\bsp.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.01.27 13:16:53 INFO  Attempting to connect to the build server...
+2024.01.27 13:16:53 INFO  Bloop uses C:\Program Files\Java\jdk-17 defined at C:\Users\ARNAU\.bloop\bloop.json
+2024.01.27 13:16:53 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\project\.metals\bsp.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.01.27 13:16:53 INFO  time: Connected to build server in 0.3s
+2024.01.27 13:16:53 INFO  Connected to Build server: Bloop v1.5.13
+2024.01.27 13:16:54 INFO  time: Imported build in 0.14s
+2024.01.27 13:16:57 INFO  time: indexed workspace in 3.76s
+2024.01.27 13:17:33 INFO  Shutting down server
+2024.01.27 13:17:33 INFO  shutting down Metals
+2024.01.27 13:17:33 INFO  Shut down connection with build server.
+2024.01.27 13:17:33 INFO  Shut down connection with build server.
+2024.01.27 13:17:33 INFO  Exiting server
+2024.01.27 13:17:41 INFO  Started: Metals version 1.2.0 in folders 'C:\Users\ARNAU\Desktop\TAP\Scala-Projects' for client Visual Studio Code 1.85.2.
+2024.01.27 13:17:42 INFO  Attempting to connect to the build server...
+2024.01.27 13:17:42 INFO  Bloop uses C:\Program Files\Java\jdk-17 defined at C:\Users\ARNAU\.bloop\bloop.json
+2024.01.27 13:17:42 INFO  skipping build import with status 'Installed'
+2024.01.27 13:17:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\bsp.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.01.27 13:17:42 INFO  Attempting to connect to the build server...
+2024.01.27 13:17:42 INFO  Bloop uses C:\Program Files\Java\jdk-17 defined at C:\Users\ARNAU\.bloop\bloop.json
+2024.01.27 13:17:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\project\.metals\bsp.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.01.27 13:17:42 INFO  time: Connected to build server in 0.35s
+2024.01.27 13:17:42 INFO  Connected to Build server: Bloop v1.5.13
+2024.01.27 13:17:46 INFO  time: indexed workspace in 3.76s
+2024.01.27 13:33:25 INFO  Shutting down server
+2024.01.27 13:33:25 INFO  shutting down Metals
+2024.01.27 13:33:25 INFO  Shut down connection with build server.
+2024.01.27 13:33:25 INFO  Shut down connection with build server.
+2024.01.27 13:33:25 INFO  Exiting server
+2024.01.27 13:33:34 INFO  Started: Metals version 1.2.0 in folders 'C:\Users\ARNAU\Desktop\TAP\Scala-Projects' for client Visual Studio Code 1.85.2.
+2024.01.27 13:33:35 INFO  Attempting to connect to the build server...
+2024.01.27 13:33:35 INFO  Bloop uses C:\Program Files\Java\jdk-17 defined at C:\Users\ARNAU\.bloop\bloop.json
+2024.01.27 13:33:35 INFO  skipping build import with status 'Installed'
+2024.01.27 13:33:35 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\bsp.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.01.27 13:33:35 INFO  Attempting to connect to the build server...
+2024.01.27 13:33:35 INFO  Bloop uses C:\Program Files\Java\jdk-17 defined at C:\Users\ARNAU\.bloop\bloop.json
+2024.01.27 13:33:35 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\project\.metals\bsp.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.01.27 13:33:35 INFO  time: Connected to build server in 0.31s
+2024.01.27 13:33:35 INFO  Connected to Build server: Bloop v1.5.13
+2024.01.27 13:33:39 INFO  time: indexed workspace in 3.91s
