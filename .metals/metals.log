@@ -9862,3 +9862,8 @@ scala.meta.tokenizers.TokenizeException: <input>:158: error: illegal character '
 2024.01.27 13:07:06 INFO  Closing debug server tcp://0.0.0.0:51266
 ene 27, 2024 1:10:37 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2024.01.27 13:16:44 INFO  Shutting down server
+2024.01.27 13:16:44 INFO  shutting down Metals
+2024.01.27 13:16:44 INFO  Shut down connection with build server.
+2024.01.27 13:16:44 INFO  Shut down connection with build server.
+2024.01.27 13:16:44 INFO  Exiting server
