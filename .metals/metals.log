@@ -10714,3 +10714,8 @@ WARNING: Unmatched cancel notification for request id 1189
 2024.01.27 16:04:44 INFO  time: compiled root in 0.48s
 ene 27, 2024 4:05:35 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2024.01.27 16:10:38 INFO  Shutting down server
+2024.01.27 16:10:38 INFO  shutting down Metals
+2024.01.27 16:10:38 INFO  Shut down connection with build server.
+2024.01.27 16:10:38 INFO  Shut down connection with build server.
+2024.01.27 16:10:38 INFO  Exiting server
