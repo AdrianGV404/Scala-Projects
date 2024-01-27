@@ -5,13 +5,34 @@ import main.scala.Singleton
 import scala.composite
 import munit.FunSuite
 import main.java.{Controller, Invoker, Action, Metric}
-import main.java.reflection.{ActionProxy,DynamicProxy}
-import main.java.policy.{UniformGroup, RoundRobinImproved, RoundRobin, GreedyGroup, BigGroup}
-import main.java.operations.{Adder, CountWords, Factorial, Multiplier, WordCount}
+import main.java.reflection.{ActionProxy, DynamicProxy}
+import main.java.policy.{
+  UniformGroup,
+  RoundRobinImproved,
+  RoundRobin,
+  GreedyGroup,
+  BigGroup
+}
+import main.java.operations.{
+  Adder,
+  CountWords,
+  Factorial,
+  Multiplier,
+  WordCount
+}
 import main.java.mapReduce.{Reduce, TextReader}
-import main.java.interfaces.{DistributionPolicy, InterfaceAction, InterfaceInvoker, Observer}
+import main.java.interfaces.{
+  DistributionPolicy,
+  InterfaceAction,
+  InterfaceInvoker,
+  Observer
+}
 import main.java.exceptions.InsufficientMemoryException
-import main.java.decorator.{ActionResult, InvokerCacheDecorator, InvokerChronometerDecorator}
+import main.java.decorator.{
+  ActionResult,
+  InvokerCacheDecorator,
+  InvokerChronometerDecorator
+}
 
 class Tests extends FunSuite {
 
@@ -25,7 +46,8 @@ class Tests extends FunSuite {
     )
 
     // Get word count and total word count
-    val wordCount: Map[String, Int] = ScalaFunctions.wordCount(Left(sampleTexts))
+    val wordCount: Map[String, Int] =
+      ScalaFunctions.wordCount(Left(sampleTexts))
     val countWords: Int = ScalaFunctions.countWords(Left(sampleTexts))
 
     // Assert that the word count for specific words is as expected
@@ -45,7 +67,8 @@ class Tests extends FunSuite {
     val fileContent = ScalaFunctions.readText(filePath)
     println(s"File Content:\n$fileContent")
 
-    val wordCount: Map[String, Int] = ScalaFunctions.wordCount(Right(fileContent))
+    val wordCount: Map[String, Int] =
+      ScalaFunctions.wordCount(Right(fileContent))
     val countWords: Int = ScalaFunctions.countWords(Right(fileContent))
 
     // Assert that the word count for specific words is as expected
@@ -55,10 +78,10 @@ class Tests extends FunSuite {
     assertEquals(wordCount.getOrElse("of", 2), 2)
 
     // Assert that the total word count is as expected
-   assertEquals(countWords, 22)
+    assertEquals(countWords, 22)
   }
 
-    test("read temporal") {
+  test("read temporal") {
     // Create a temporary file with some content for testing
     val tempFilePath = "temporal.txt"
     val tempFileContent = "This is a test one this is a test."
@@ -73,16 +96,17 @@ class Tests extends FunSuite {
     val fileContent = ScalaFunctions.readText(tempFilePath)
     println(s"File Content:\n$fileContent")
 
-    val wordCount: Map[String, Int] = ScalaFunctions.wordCount(Right(fileContent))
+    val wordCount: Map[String, Int] =
+      ScalaFunctions.wordCount(Right(fileContent))
     val countWords: Int = ScalaFunctions.countWords(Right(fileContent))
     // Assert that the content read from the file is the same as expected
-    assertEquals(fileContent, tempFileContent)    
+    assertEquals(fileContent, tempFileContent)
     assertEquals(wordCount.getOrElse("this", 2), 2)
     assertEquals(wordCount.getOrElse("is", 2), 2)
     assertEquals(wordCount.getOrElse("a", 2), 2)
     assertEquals(wordCount.getOrElse("test", 2), 2)
     assertEquals(wordCount.getOrElse("one", 1), 1)
-    
+
     // Assert that the total word count is as expected
     assertEquals(countWords, 9)
   }
@@ -101,61 +125,66 @@ class Tests extends FunSuite {
     assertEquals(Singleton.getId, customSingletonId)
   }
 
-    test("Java Functions Working") {
+  test("Java Functions Working") {
     val controller: Controller = Controller.getInstance()
     controller.setPolicy(new RoundRobinImproved());
     val controllerId: Int = controller.getId()
     println(s"Controller ID: $controllerId")
 
-    val invoker = new Invoker(1024, "Invoker1") 
+    val invoker = new Invoker(1024, "Invoker1")
     controller.addInvoker(invoker)
 
-    val invoker2 = new Invoker(1024, "Invoker2") 
+    val invoker2 = new Invoker(1024, "Invoker2")
     controller.addInvoker(invoker2)
 
     val list: List[Int] = List(1, 2, 3, 4, 5)
-    val values: Array[Int] = list.toArray //"casting" to avoid type problem
+    val values: Array[Int] = list.toArray // "casting" to avoid type problem
 
-    val add1: Adder = new Adder("add1", 2000, {values});
-    val add2: Adder = new Adder("add2", 2000, {values});
+    val add1: Adder = new Adder("add1", 200, { values });
+    val add2: Adder = new Adder("add2", 200, { values });
 
-        
     controller.addAction(add1)
     controller.addAction(add2);
 
     // Distribuir acciones (puedes personalizar esto según tu lógica)
-    assert(true,controller.distributeActions())
+    assert(true, controller.distributeActions());
 
-    assertEquals(1,invoker.getActions().size());
-    assertEquals(1,invoker2.getActions().size());
+    controller.distributeActions();
+    assertEquals(1, invoker.getActions().size());
+    assertEquals(1, invoker2.getActions().size());
 
     // Ejecutar acciones asignadas
     controller.executeAssignedActions()
-    assertEquals(0,invoker.getActions().size());
-    assertEquals(0,invoker2.getActions().size());
+    assertEquals(0, invoker.getActions().size());
+    assertEquals(0, invoker2.getActions().size());
 
     // Imprimir métricas
-    assertEquals(2,controller.getMetrics().size())
+    assertEquals(2, controller.getMetrics().size())
     controller.printMetrics()
   }
 
-  test("Composite Menu Test"){
-    val Menu: composite.MenuCategory=new  composite.MenuCategory("Root");
-    val appetizersCategory: composite.MenuCategory = new composite.MenuCategory("Appetizers")
-    val mainCourses: composite.MenuCategory = new composite.MenuCategory("Main Courses")
+  test("Composite Menu Test") {
+    val Menu: composite.MenuCategory = new composite.MenuCategory("Root");
+    val appetizersCategory: composite.MenuCategory =
+      new composite.MenuCategory("Appetizers")
+    val mainCourses: composite.MenuCategory =
+      new composite.MenuCategory("Main Courses")
     Menu.addChild(appetizersCategory)
     Menu.addChild(mainCourses)
-    val salad: composite.SingleItem = new composite.SingleItem("Caesar Salad", 8.99)
+    val salad: composite.SingleItem =
+      new composite.SingleItem("Caesar Salad", 8.99)
     appetizersCategory.addChild(salad)
-    val pasta: composite.MenuCategory = new composite.MenuCategory("Pasta")  
+    val pasta: composite.MenuCategory = new composite.MenuCategory("Pasta")
     mainCourses.addChild(pasta)
-    val spaghetti: composite.SingleItem = new composite.SingleItem("Spaghetti Bolognese", 12.99)
+    val spaghetti: composite.SingleItem =
+      new composite.SingleItem("Spaghetti Bolognese", 12.99)
     pasta.addChild(spaghetti)
-    val soup: composite.SingleItem = new composite.SingleItem("Tomato Soup", 0.04)
+    val soup: composite.SingleItem =
+      new composite.SingleItem("Tomato Soup", 0.04)
     appetizersCategory.addChild(soup);
 
-    assertEquals(12.99,mainCourses.getPrice);
-    assertEquals(9.03,appetizersCategory.getPrice);
+    assertEquals(12.99, mainCourses.getPrice);
+    assertEquals(9.03, appetizersCategory.getPrice);
 
   }
 }

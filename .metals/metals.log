@@ -9911,3 +9911,689 @@ INFO: Unsupported notification method: $/setTrace
 2024.01.27 13:33:35 INFO  time: Connected to build server in 0.31s
 2024.01.27 13:33:35 INFO  Connected to Build server: Bloop v1.5.13
 2024.01.27 13:33:39 INFO  time: indexed workspace in 3.91s
+2024.01.27 13:34:10 INFO  Shutting down server
+2024.01.27 13:34:10 INFO  shutting down Metals
+2024.01.27 13:34:10 INFO  Shut down connection with build server.
+2024.01.27 13:34:10 INFO  Shut down connection with build server.
+2024.01.27 13:34:10 INFO  Exiting server
+2024.01.27 15:29:52 INFO  Started: Metals version 1.2.0 in folders 'C:\Users\ARNAU\Desktop\TAP\Scala-Projects' for client Visual Studio Code 1.85.2.
+2024.01.27 15:29:53 INFO  Attempting to connect to the build server...
+2024.01.27 15:29:53 INFO  skipping build import with status 'Installed'
+2024.01.27 15:29:53 INFO  Bloop uses C:\Program Files\Java\jdk-17 defined at C:\Users\ARNAU\.bloop\bloop.json
+2024.01.27 15:29:53 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\bsp.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.01.27 15:29:53 INFO  Attempting to connect to the build server...
+2024.01.27 15:29:53 INFO  Bloop uses C:\Program Files\Java\jdk-17 defined at C:\Users\ARNAU\.bloop\bloop.json
+2024.01.27 15:29:53 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\project\.metals\bsp.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.01.27 15:29:53 INFO  time: Connected to build server in 0.31s
+2024.01.27 15:29:53 INFO  Connected to Build server: Bloop v1.5.13
+ene 27, 2024 3:29:53 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.01.27 15:30:01 INFO  time: indexed workspace in 7.12s
+2024.01.27 15:30:13 INFO  compiling root-test (1 scala source)
+2024.01.27 15:30:13 INFO  time: compiled root-test in 0.59s
+ene 27, 2024 3:31:10 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 207
+Exception in thread "pool-6-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+ene 27, 2024 3:31:10 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 209
+ene 27, 2024 3:31:10 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 210
+2024.01.27 15:31:41 INFO  Report absolute-path: ### java.lang.IllegalArgumentException: Illegal character in opaque part at index 22: jar:file:///C:/Program Files/Java/jdk-17/lib/src.zip!/java.base/java/util/ArrayList.java
+
+Uri: jar:file:///C:/Program Files/Java/jdk-17/lib/src.zip!/java.base/java/util/ArrayList.java
+
+
+#### Error stacktrace:
+
+```
+java.base/java.net.URI.create(URI.java:906)
+	scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:177)
+	scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:684)
+	scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:681)
+	scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePathSafe(MetalsEnrichments.scala:667)
+	scala.meta.internal.metals.WorkspaceLspService.getServiceFor(WorkspaceLspService.scala:262)
+	scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:703)
+	scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	java.base/java.lang.Thread.run(Thread.java:842)
+```
+
+ene 27, 2024 3:31:41 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didOpen",
+  "params": {
+    "textDocument": {
+      "uri": "jar:file%3A///C%3A/Program%20Files/Java/jdk-17/lib/src.zip%21/java.base/java/util/ArrayList.java",
+      "languageId": "java",
+      "version": 1,
+      "text": "/*\n * Copyright (c) 1997, 2019, Oracle and/or its affiliates. All rights reserved.\n * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.\n *\n *\n *\n *\n *\n *\n *\n *\n *\n *\n *\n *\n *\n *\n *\n *\n *\n *\n *\n *\n */\n\npackage java.util;\n\nimport java.util.function.Consumer;\nimport java.util.function.Predicate;\nimport java.util.function.UnaryOperator;\nimport jdk.internal.access.SharedSecrets;\nimport jdk.internal.util.ArraysSupport;\n\n/**\n * Resizable-array implementation of the {@code List} interface.  Implements\n * all optional list operations, and permits all elements, including\n * {@code null}.  In addition to implementing the {@code List} interface,\n * this class provides methods to manipulate the size of the array that is\n * used internally to store the list.  (This class is roughly equivalent to\n * {@code Vector}, except that it is unsynchronized.)\n *\n * \u003cp\u003eThe {@code size}, {@code isEmpty}, {@code get}, {@code set},\n * {@code iterator}, and {@code listIterator} operations run in constant\n * time.  The {@code add} operation runs in \u003ci\u003eamortized constant time\u003c/i\u003e,\n * that is, adding n elements requires O(n) time.  All of the other operations\n * run in linear time (roughly speaking).  The constant factor is low compared\n * to that for the {@code LinkedList} implementation.\n *\n * \u003cp\u003eEach {@code ArrayList} instance has a \u003ci\u003ecapacity\u003c/i\u003e.  The capacity is\n * the size of the array used to store the elements in the list.  It is always\n * at least as large as the list size.  As elements are added to an ArrayList,\n * its capacity grows automatically.  The details of the growth policy are not\n * specified beyond the fact that adding an element has constant amortized\n * time cost.\n *\n * \u003cp\u003eAn application can increase the capacity of an {@code ArrayList} instance\n * before adding a large number of elements using the {@code ensureCapacity}\n * operation.  This may reduce the amount of incremental reallocation.\n *\n * \u003cp\u003e\u003cstrong\u003eNote that this implementation is not synchronized.\u003c/strong\u003e\n * If multiple threads access an {@code ArrayList} instance concurrently,\n * and at least one of the threads modifies the list structurally, it\n * \u003ci\u003emust\u003c/i\u003e be synchronized externally.  (A structural modification is\n * any operation that adds or deletes one or more elements, or explicitly\n * resizes the backing array; merely setting the value of an element is not\n * a structural modification.)  This is typically accomplished by\n * synchronizing on some object that naturally encapsulates the list.\n *\n * If no such object exists, the list should be \"wrapped\" using the\n * {@link Collections#synchronizedList Collections.synchronizedList}\n * method.  This is best done at creation time, to prevent accidental\n * unsynchronized access to the list:\u003cpre\u003e\n *   List list \u003d Collections.synchronizedList(new ArrayList(...));\u003c/pre\u003e\n *\n * \u003cp id\u003d\"fail-fast\"\u003e\n * The iterators returned by this class\u0027s {@link #iterator() iterator} and\n * {@link #listIterator(int) listIterator} methods are \u003cem\u003efail-fast\u003c/em\u003e:\n * if the list is structurally modified at any time after the iterator is\n * created, in any way except through the iterator\u0027s own\n * {@link ListIterator#remove() remove} or\n * {@link ListIterator#add(Object) add} methods, the iterator will throw a\n * {@link ConcurrentModificationException}.  Thus, in the face of\n * concurrent modification, the iterator fails quickly and cleanly, rather\n * than risking arbitrary, non-deterministic behavior at an undetermined\n * time in the future.\n *\n * \u003cp\u003eNote that the fail-fast behavior of an iterator cannot be guaranteed\n * as it is, generally speaking, impossible to make any hard guarantees in the\n * presence of unsynchronized concurrent modification.  Fail-fast iterators\n * throw {@code ConcurrentModificationException} on a best-effort basis.\n * Therefore, it would be wrong to write a program that depended on this\n * exception for its correctness:  \u003ci\u003ethe fail-fast behavior of iterators\n * should be used only to detect bugs.\u003c/i\u003e\n *\n * \u003cp\u003eThis class is a member of the\n * \u003ca href\u003d\"{@docRoot}/java.base/java/util/package-summary.html#CollectionsFramework\"\u003e\n * Java Collections Framework\u003c/a\u003e.\n *\n * @param \u003cE\u003e the type of elements in this list\n *\n * @author  Josh Bloch\n * @author  Neal Gafter\n * @see     Collection\n * @see     List\n * @see     LinkedList\n * @see     Vector\n * @since   1.2\n */\npublic class ArrayList\u003cE\u003e extends AbstractList\u003cE\u003e\n        implements List\u003cE\u003e, RandomAccess, Cloneable, java.io.Serializable\n{\n    @java.io.Serial\n    private static final long serialVersionUID \u003d 8683452581122892189L;\n\n    /**\n     * Default initial capacity.\n     */\n    private static final int DEFAULT_CAPACITY \u003d 10;\n\n    /**\n     * Shared empty array instance used for empty instances.\n     */\n    private static final Object[] EMPTY_ELEMENTDATA \u003d {};\n\n    /**\n     * Shared empty array instance used for default sized empty instances. We\n     * distinguish this from EMPTY_ELEMENTDATA to know how much to inflate when\n     * first element is added.\n     */\n    private static final Object[] DEFAULTCAPACITY_EMPTY_ELEMENTDATA \u003d {};\n\n    /**\n     * The array buffer into which the elements of the ArrayList are stored.\n     * The capacity of the ArrayList is the length of this array buffer. Any\n     * empty ArrayList with elementData \u003d\u003d DEFAULTCAPACITY_EMPTY_ELEMENTDATA\n     * will be expanded to DEFAULT_CAPACITY when the first element is added.\n     */\n    transient Object[] elementData; // non-private to simplify nested class access\n\n    /**\n     * The size of the ArrayList (the number of elements it contains).\n     *\n     * @serial\n     */\n    private int size;\n\n    /**\n     * Constructs an empty list with the specified initial capacity.\n     *\n     * @param  initialCapacity  the initial capacity of the list\n     * @throws IllegalArgumentException if the specified initial capacity\n     *         is negative\n     */\n    public ArrayList(int initialCapacity) {\n        if (initialCapacity \u003e 0) {\n            this.elementData \u003d new Object[initialCapacity];\n        } else if (initialCapacity \u003d\u003d 0) {\n            this.elementData \u003d EMPTY_ELEMENTDATA;\n        } else {\n            throw new IllegalArgumentException(\"Illegal Capacity: \"+\n                                               initialCapacity);\n        }\n    }\n\n    /**\n     * Constructs an empty list with an initial capacity of ten.\n     */\n    public ArrayList() {\n        this.elementData \u003d DEFAULTCAPACITY_EMPTY_ELEMENTDATA;\n    }\n\n    /**\n     * Constructs a list containing the elements of the specified\n     * collection, in the order they are returned by the collection\u0027s\n     * iterator.\n     *\n     * @param c the collection whose elements are to be placed into this list\n     * @throws NullPointerException if the specified collection is null\n     */\n    public ArrayList(Collection\u003c? extends E\u003e c) {\n        Object[] a \u003d c.toArray();\n        if ((size \u003d a.length) !\u003d 0) {\n            if (c.getClass() \u003d\u003d ArrayList.class) {\n                elementData \u003d a;\n            } else {\n                elementData \u003d Arrays.copyOf(a, size, Object[].class);\n            }\n        } else {\n            // replace with empty array.\n            elementData \u003d EMPTY_ELEMENTDATA;\n        }\n    }\n\n    /**\n     * Trims the capacity of this {@code ArrayList} instance to be the\n     * list\u0027s current size.  An application can use this operation to minimize\n     * the storage of an {@code ArrayList} instance.\n     */\n    public void trimToSize() {\n        modCount++;\n        if (size \u003c elementData.length) {\n            elementData \u003d (size \u003d\u003d 0)\n              ? EMPTY_ELEMENTDATA\n              : Arrays.copyOf(elementData, size);\n        }\n    }\n\n    /**\n     * Increases the capacity of this {@code ArrayList} instance, if\n     * necessary, to ensure that it can hold at least the number of elements\n     * specified by the minimum capacity argument.\n     *\n     * @param minCapacity the desired minimum capacity\n     */\n    public void ensureCapacity(int minCapacity) {\n        if (minCapacity \u003e elementData.length\n            \u0026\u0026 !(elementData \u003d\u003d DEFAULTCAPACITY_EMPTY_ELEMENTDATA\n                 \u0026\u0026 minCapacity \u003c\u003d DEFAULT_CAPACITY)) {\n            modCount++;\n            grow(minCapacity);\n        }\n    }\n\n    /**\n     * Increases the capacity to ensure that it can hold at least the\n     * number of elements specified by the minimum capacity argument.\n     *\n     * @param minCapacity the desired minimum capacity\n     * @throws OutOfMemoryError if minCapacity is less than zero\n     */\n    private Object[] grow(int minCapacity) {\n        int oldCapacity \u003d elementData.length;\n        if (oldCapacity \u003e 0 || elementData !\u003d DEFAULTCAPACITY_EMPTY_ELEMENTDATA) {\n            int newCapacity \u003d ArraysSupport.newLength(oldCapacity,\n                    minCapacity - oldCapacity, /* minimum growth */\n                    oldCapacity \u003e\u003e 1           /* preferred growth */);\n            return elementData \u003d Arrays.copyOf(elementData, newCapacity);\n        } else {\n            return elementData \u003d new Object[Math.max(DEFAULT_CAPACITY, minCapacity)];\n        }\n    }\n\n    private Object[] grow() {\n        return grow(size + 1);\n    }\n\n    /**\n     * Returns the number of elements in this list.\n     *\n     * @return the number of elements in this list\n     */\n    public int size() {\n        return size;\n    }\n\n    /**\n     * Returns {@code true} if this list contains no elements.\n     *\n     * @return {@code true} if this list contains no elements\n     */\n    public boolean isEmpty() {\n        return size \u003d\u003d 0;\n    }\n\n    /**\n     * Returns {@code true} if this list contains the specified element.\n     * More formally, returns {@code true} if and only if this list contains\n     * at least one element {@code e} such that\n     * {@code Objects.equals(o, e)}.\n     *\n     * @param o element whose presence in this list is to be tested\n     * @return {@code true} if this list contains the specified element\n     */\n    public boolean contains(Object o) {\n        return indexOf(o) \u003e\u003d 0;\n    }\n\n    /**\n     * Returns the index of the first occurrence of the specified element\n     * in this list, or -1 if this list does not contain the element.\n     * More formally, returns the lowest index {@code i} such that\n     * {@code Objects.equals(o, get(i))},\n     * or -1 if there is no such index.\n     */\n    public int indexOf(Object o) {\n        return indexOfRange(o, 0, size);\n    }\n\n    int indexOfRange(Object o, int start, int end) {\n        Object[] es \u003d elementData;\n        if (o \u003d\u003d null) {\n            for (int i \u003d start; i \u003c end; i++) {\n                if (es[i] \u003d\u003d null) {\n                    return i;\n                }\n            }\n        } else {\n            for (int i \u003d start; i \u003c end; i++) {\n                if (o.equals(es[i])) {\n                    return i;\n                }\n            }\n        }\n        return -1;\n    }\n\n    /**\n     * Returns the index of the last occurrence of the specified element\n     * in this list, or -1 if this list does not contain the element.\n     * More formally, returns the highest index {@code i} such that\n     * {@code Objects.equals(o, get(i))},\n     * or -1 if there is no such index.\n     */\n    public int lastIndexOf(Object o) {\n        return lastIndexOfRange(o, 0, size);\n    }\n\n    int lastIndexOfRange(Object o, int start, int end) {\n        Object[] es \u003d elementData;\n        if (o \u003d\u003d null) {\n            for (int i \u003d end - 1; i \u003e\u003d start; i--) {\n                if (es[i] \u003d\u003d null) {\n                    return i;\n                }\n            }\n        } else {\n            for (int i \u003d end - 1; i \u003e\u003d start; i--) {\n                if (o.equals(es[i])) {\n                    return i;\n                }\n            }\n        }\n        return -1;\n    }\n\n    /**\n     * Returns a shallow copy of this {@code ArrayList} instance.  (The\n     * elements themselves are not copied.)\n     *\n     * @return a clone of this {@code ArrayList} instance\n     */\n    public Object clone() {\n        try {\n            ArrayList\u003c?\u003e v \u003d (ArrayList\u003c?\u003e) super.clone();\n            v.elementData \u003d Arrays.copyOf(elementData, size);\n            v.modCount \u003d 0;\n            return v;\n        } catch (CloneNotSupportedException e) {\n            // this shouldn\u0027t happen, since we are Cloneable\n            throw new InternalError(e);\n        }\n    }\n\n    /**\n     * Returns an array containing all of the elements in this list\n     * in proper sequence (from first to last element).\n     *\n     * \u003cp\u003eThe returned array will be \"safe\" in that no references to it are\n     * maintained by this list.  (In other words, this method must allocate\n     * a new array).  The caller is thus free to modify the returned array.\n     *\n     * \u003cp\u003eThis method acts as bridge between array-based and collection-based\n     * APIs.\n     *\n     * @return an array containing all of the elements in this list in\n     *         proper sequence\n     */\n    public Object[] toArray() {\n        return Arrays.copyOf(elementData, size);\n    }\n\n    /**\n     * Returns an array containing all of the elements in this list in proper\n     * sequence (from first to last element); the runtime type of the returned\n     * array is that of the specified array.  If the list fits in the\n     * specified array, it is returned therein.  Otherwise, a new array is\n     * allocated with the runtime type of the specified array and the size of\n     * this list.\n     *\n     * \u003cp\u003eIf the list fits in the specified array with room to spare\n     * (i.e., the array has more elements than the list), the element in\n     * the array immediately following the end of the collection is set to\n     * {@code null}.  (This is useful in determining the length of the\n     * list \u003ci\u003eonly\u003c/i\u003e if the caller knows that the list does not contain\n     * any null elements.)\n     *\n     * @param a the array into which the elements of the list are to\n     *          be stored, if it is big enough; otherwise, a new array of the\n     *          same runtime type is allocated for this purpose.\n     * @return an array containing the elements of the list\n     * @throws ArrayStoreException if the runtime type of the specified array\n     *         is not a supertype of the runtime type of every element in\n     *         this list\n     * @throws NullPointerException if the specified array is null\n     */\n    @SuppressWarnings(\"unchecked\")\n    public \u003cT\u003e T[] toArray(T[] a) {\n        if (a.length \u003c size)\n            // Make a new array of a\u0027s runtime type, but my contents:\n            return (T[]) Arrays.copyOf(elementData, size, a.getClass());\n        System.arraycopy(elementData, 0, a, 0, size);\n        if (a.length \u003e size)\n            a[size] \u003d null;\n        return a;\n    }\n\n    // Positional Access Operations\n\n    @SuppressWarnings(\"unchecked\")\n    E elementData(int index) {\n        return (E) elementData[index];\n    }\n\n    @SuppressWarnings(\"unchecked\")\n    static \u003cE\u003e E elementAt(Object[] es, int index) {\n        return (E) es[index];\n    }\n\n    /**\n     * Returns the element at the specified position in this list.\n     *\n     * @param  index index of the element to return\n     * @return the element at the specified position in this list\n     * @throws IndexOutOfBoundsException {@inheritDoc}\n     */\n    public E get(int index) {\n        Objects.checkIndex(index, size);\n        return elementData(index);\n    }\n\n    /**\n     * Replaces the element at the specified position in this list with\n     * the specified element.\n     *\n     * @param index index of the element to replace\n     * @param element element to be stored at the specified position\n     * @return the element previously at the specified position\n     * @throws IndexOutOfBoundsException {@inheritDoc}\n     */\n    public E set(int index, E element) {\n        Objects.checkIndex(index, size);\n        E oldValue \u003d elementData(index);\n        elementData[index] \u003d element;\n        return oldValue;\n    }\n\n    /**\n     * This helper method split out from add(E) to keep method\n     * bytecode size under 35 (the -XX:MaxInlineSize default value),\n     * which helps when add(E) is called in a C1-compiled loop.\n     */\n    private void add(E e, Object[] elementData, int s) {\n        if (s \u003d\u003d elementData.length)\n            elementData \u003d grow();\n        elementData[s] \u003d e;\n        size \u003d s + 1;\n    }\n\n    /**\n     * Appends the specified element to the end of this list.\n     *\n     * @param e element to be appended to this list\n     * @return {@code true} (as specified by {@link Collection#add})\n     */\n    public boolean add(E e) {\n        modCount++;\n        add(e, elementData, size);\n        return true;\n    }\n\n    /**\n     * Inserts the specified element at the specified position in this\n     * list. Shifts the element currently at that position (if any) and\n     * any subsequent elements to the right (adds one to their indices).\n     *\n     * @param index index at which the specified element is to be inserted\n     * @param element element to be inserted\n     * @throws IndexOutOfBoundsException {@inheritDoc}\n     */\n    public void add(int index, E element) {\n        rangeCheckForAdd(index);\n        modCount++;\n        final int s;\n        Object[] elementData;\n        if ((s \u003d size) \u003d\u003d (elementData \u003d this.elementData).length)\n            elementData \u003d grow();\n        System.arraycopy(elementData, index,\n                         elementData, index + 1,\n                         s - index);\n        elementData[index] \u003d element;\n        size \u003d s + 1;\n    }\n\n    /**\n     * Removes the element at the specified position in this list.\n     * Shifts any subsequent elements to the left (subtracts one from their\n     * indices).\n     *\n     * @param index the index of the element to be removed\n     * @return the element that was removed from the list\n     * @throws IndexOutOfBoundsException {@inheritDoc}\n     */\n    public E remove(int index) {\n        Objects.checkIndex(index, size);\n        final Object[] es \u003d elementData;\n\n        @SuppressWarnings(\"unchecked\") E oldValue \u003d (E) es[index];\n        fastRemove(es, index);\n\n        return oldValue;\n    }\n\n    /**\n     * {@inheritDoc}\n     */\n    public boolean equals(Object o) {\n        if (o \u003d\u003d this) {\n            return true;\n        }\n\n        if (!(o instanceof List)) {\n            return false;\n        }\n\n        final int expectedModCount \u003d modCount;\n        // ArrayList can be subclassed and given arbitrary behavior, but we can\n        // still deal with the common case where o is ArrayList precisely\n        boolean equal \u003d (o.getClass() \u003d\u003d ArrayList.class)\n            ? equalsArrayList((ArrayList\u003c?\u003e) o)\n            : equalsRange((List\u003c?\u003e) o, 0, size);\n\n        checkForComodification(expectedModCount);\n        return equal;\n    }\n\n    boolean equalsRange(List\u003c?\u003e other, int from, int to) {\n        final Object[] es \u003d elementData;\n        if (to \u003e es.length) {\n            throw new ConcurrentModificationException();\n        }\n        var oit \u003d other.iterator();\n        for (; from \u003c to; from++) {\n            if (!oit.hasNext() || !Objects.equals(es[from], oit.next())) {\n                return false;\n            }\n        }\n        return !oit.hasNext();\n    }\n\n    private boolean equalsArrayList(ArrayList\u003c?\u003e other) {\n        final int otherModCount \u003d other.modCount;\n        final int s \u003d size;\n        boolean equal;\n        if (equal \u003d (s \u003d\u003d other.size)) {\n            final Object[] otherEs \u003d other.elementData;\n            final Object[] es \u003d elementData;\n            if (s \u003e es.length || s \u003e otherEs.length) {\n                throw new ConcurrentModificationException();\n            }\n            for (int i \u003d 0; i \u003c s; i++) {\n                if (!Objects.equals(es[i], otherEs[i])) {\n                    equal \u003d false;\n                    break;\n                }\n            }\n        }\n        other.checkForComodification(otherModCount);\n        return equal;\n    }\n\n    private void checkForComodification(final int expectedModCount) {\n        if (modCount !\u003d expectedModCount) {\n            throw new ConcurrentModificationException();\n        }\n    }\n\n    /**\n     * {@inheritDoc}\n     */\n    public int hashCode() {\n        int expectedModCount \u003d modCount;\n        int hash \u003d hashCodeRange(0, size);\n        checkForComodification(expectedModCount);\n        return hash;\n    }\n\n    int hashCodeRange(int from, int to) {\n        final Object[] es \u003d elementData;\n        if (to \u003e es.length) {\n            throw new ConcurrentModificationException();\n        }\n        int hashCode \u003d 1;\n        for (int i \u003d from; i \u003c to; i++) {\n            Object e \u003d es[i];\n            hashCode \u003d 31 * hashCode + (e \u003d\u003d null ? 0 : e.hashCode());\n        }\n        return hashCode;\n    }\n\n    /**\n     * Removes the first occurrence of the specified element from this list,\n     * if it is present.  If the list does not contain the element, it is\n     * unchanged.  More formally, removes the element with the lowest index\n     * {@code i} such that\n     * {@code Objects.equals(o, get(i))}\n     * (if such an element exists).  Returns {@code true} if this list\n     * contained the specified element (or equivalently, if this list\n     * changed as a result of the call).\n     *\n     * @param o element to be removed from this list, if present\n     * @return {@code true} if this list contained the specified element\n     */\n    public boolean remove(Object o) {\n        final Object[] es \u003d elementData;\n        final int size \u003d this.size;\n        int i \u003d 0;\n        found: {\n            if (o \u003d\u003d null) {\n                for (; i \u003c size; i++)\n                    if (es[i] \u003d\u003d null)\n                        break found;\n            } else {\n                for (; i \u003c size; i++)\n                    if (o.equals(es[i]))\n                        break found;\n            }\n            return false;\n        }\n        fastRemove(es, i);\n        return true;\n    }\n\n    /**\n     * Private remove method that skips bounds checking and does not\n     * return the value removed.\n     */\n    private void fastRemove(Object[] es, int i) {\n        modCount++;\n        final int newSize;\n        if ((newSize \u003d size - 1) \u003e i)\n            System.arraycopy(es, i + 1, es, i, newSize - i);\n        es[size \u003d newSize] \u003d null;\n    }\n\n    /**\n     * Removes all of the elements from this list.  The list will\n     * be empty after this call returns.\n     */\n    public void clear() {\n        modCount++;\n        final Object[] es \u003d elementData;\n        for (int to \u003d size, i \u003d size \u003d 0; i \u003c to; i++)\n            es[i] \u003d null;\n    }\n\n    /**\n     * Appends all of the elements in the specified collection to the end of\n     * this list, in the order that they are returned by the\n     * specified collection\u0027s Iterator.  The behavior of this operation is\n     * undefined if the specified collection is modified while the operation\n     * is in progress.  (This implies that the behavior of this call is\n     * undefined if the specified collection is this list, and this\n     * list is nonempty.)\n     *\n     * @param c collection containing elements to be added to this list\n     * @return {@code true} if this list changed as a result of the call\n     * @throws NullPointerException if the specified collection is null\n     */\n    public boolean addAll(Collection\u003c? extends E\u003e c) {\n        Object[] a \u003d c.toArray();\n        modCount++;\n        int numNew \u003d a.length;\n        if (numNew \u003d\u003d 0)\n            return false;\n        Object[] elementData;\n        final int s;\n        if (numNew \u003e (elementData \u003d this.elementData).length - (s \u003d size))\n            elementData \u003d grow(s + numNew);\n        System.arraycopy(a, 0, elementData, s, numNew);\n        size \u003d s + numNew;\n        return true;\n    }\n\n    /**\n     * Inserts all of the elements in the specified collection into this\n     * list, starting at the specified position.  Shifts the element\n     * currently at that position (if any) and any subsequent elements to\n     * the right (increases their indices).  The new elements will appear\n     * in the list in the order that they are returned by the\n     * specified collection\u0027s iterator.\n     *\n     * @param index index at which to insert the first element from the\n     *              specified collection\n     * @param c collection containing elements to be added to this list\n     * @return {@code true} if this list changed as a result of the call\n     * @throws IndexOutOfBoundsException {@inheritDoc}\n     * @throws NullPointerException if the specified collection is null\n     */\n    public boolean addAll(int index, Collection\u003c? extends E\u003e c) {\n        rangeCheckForAdd(index);\n\n        Object[] a \u003d c.toArray();\n        modCount++;\n        int numNew \u003d a.length;\n        if (numNew \u003d\u003d 0)\n            return false;\n        Object[] elementData;\n        final int s;\n        if (numNew \u003e (elementData \u003d this.elementData).length - (s \u003d size))\n            elementData \u003d grow(s + numNew);\n\n        int numMoved \u003d s - index;\n        if (numMoved \u003e 0)\n            System.arraycopy(elementData, index,\n                             elementData, index + numNew,\n                             numMoved);\n        System.arraycopy(a, 0, elementData, index, numNew);\n        size \u003d s + numNew;\n        return true;\n    }\n\n    /**\n     * Removes from this list all of the elements whose index is between\n     * {@code fromIndex}, inclusive, and {@code toIndex}, exclusive.\n     * Shifts any succeeding elements to the left (reduces their index).\n     * This call shortens the list by {@code (toIndex - fromIndex)} elements.\n     * (If {@code toIndex\u003d\u003dfromIndex}, this operation has no effect.)\n     *\n     * @throws IndexOutOfBoundsException if {@code fromIndex} or\n     *         {@code toIndex} is out of range\n     *         ({@code fromIndex \u003c 0 ||\n     *          toIndex \u003e size() ||\n     *          toIndex \u003c fromIndex})\n     */\n    protected void removeRange(int fromIndex, int toIndex) {\n        if (fromIndex \u003e toIndex) {\n            throw new IndexOutOfBoundsException(\n                    outOfBoundsMsg(fromIndex, toIndex));\n        }\n        modCount++;\n        shiftTailOverGap(elementData, fromIndex, toIndex);\n    }\n\n    /** Erases the gap from lo to hi, by sliding down following elements. */\n    private void shiftTailOverGap(Object[] es, int lo, int hi) {\n        System.arraycopy(es, hi, es, lo, size - hi);\n        for (int to \u003d size, i \u003d (size -\u003d hi - lo); i \u003c to; i++)\n            es[i] \u003d null;\n    }\n\n    /**\n     * A version of rangeCheck used by add and addAll.\n     */\n    private void rangeCheckForAdd(int index) {\n        if (index \u003e size || index \u003c 0)\n            throw new IndexOutOfBoundsException(outOfBoundsMsg(index));\n    }\n\n    /**\n     * Constructs an IndexOutOfBoundsException detail message.\n     * Of the many possible refactorings of the error handling code,\n     * this \"outlining\" performs best with both server and client VMs.\n     */\n    private String outOfBoundsMsg(int index) {\n        return \"Index: \"+index+\", Size: \"+size;\n    }\n\n    /**\n     * A version used in checking (fromIndex \u003e toIndex) condition\n     */\n    private static String outOfBoundsMsg(int fromIndex, int toIndex) {\n        return \"From Index: \" + fromIndex + \" \u003e To Index: \" + toIndex;\n    }\n\n    /**\n     * Removes from this list all of its elements that are contained in the\n     * specified collection.\n     *\n     * @param c collection containing elements to be removed from this list\n     * @return {@code true} if this list changed as a result of the call\n     * @throws ClassCastException if the class of an element of this list\n     *         is incompatible with the specified collection\n     * (\u003ca href\u003d\"Collection.html#optional-restrictions\"\u003eoptional\u003c/a\u003e)\n     * @throws NullPointerException if this list contains a null element and the\n     *         specified collection does not permit null elements\n     * (\u003ca href\u003d\"Collection.html#optional-restrictions\"\u003eoptional\u003c/a\u003e),\n     *         or if the specified collection is null\n     * @see Collection#contains(Object)\n     */\n    public boolean removeAll(Collection\u003c?\u003e c) {\n        return batchRemove(c, false, 0, size);\n    }\n\n    /**\n     * Retains only the elements in this list that are contained in the\n     * specified collection.  In other words, removes from this list all\n     * of its elements that are not contained in the specified collection.\n     *\n     * @param c collection containing elements to be retained in this list\n     * @return {@code true} if this list changed as a result of the call\n     * @throws ClassCastException if the class of an element of this list\n     *         is incompatible with the specified collection\n     * (\u003ca href\u003d\"Collection.html#optional-restrictions\"\u003eoptional\u003c/a\u003e)\n     * @throws NullPointerException if this list contains a null element and the\n     *         specified collection does not permit null elements\n     * (\u003ca href\u003d\"Collection.html#optional-restrictions\"\u003eoptional\u003c/a\u003e),\n     *         or if the specified collection is null\n     * @see Collection#contains(Object)\n     */\n    public boolean retainAll(Collection\u003c?\u003e c) {\n        return batchRemove(c, true, 0, size);\n    }\n\n    boolean batchRemove(Collection\u003c?\u003e c, boolean complement,\n                        final int from, final int end) {\n        Objects.requireNonNull(c);\n        final Object[] es \u003d elementData;\n        int r;\n        // Optimize for initial run of survivors\n        for (r \u003d from;; r++) {\n            if (r \u003d\u003d end)\n                return false;\n            if (c.contains(es[r]) !\u003d complement)\n                break;\n        }\n        int w \u003d r++;\n        try {\n            for (Object e; r \u003c end; r++)\n                if (c.contains(e \u003d es[r]) \u003d\u003d complement)\n                    es[w++] \u003d e;\n        } catch (Throwable ex) {\n            // Preserve behavioral compatibility with AbstractCollection,\n            // even if c.contains() throws.\n            System.arraycopy(es, r, es, w, end - r);\n            w +\u003d end - r;\n            throw ex;\n        } finally {\n            modCount +\u003d end - w;\n            shiftTailOverGap(es, w, end);\n        }\n        return true;\n    }\n\n    /**\n     * Saves the state of the {@code ArrayList} instance to a stream\n     * (that is, serializes it).\n     *\n     * @param s the stream\n     * @throws java.io.IOException if an I/O error occurs\n     * @serialData The length of the array backing the {@code ArrayList}\n     *             instance is emitted (int), followed by all of its elements\n     *             (each an {@code Object}) in the proper order.\n     */\n    @java.io.Serial\n    private void writeObject(java.io.ObjectOutputStream s)\n        throws java.io.IOException {\n        // Write out element count, and any hidden stuff\n        int expectedModCount \u003d modCount;\n        s.defaultWriteObject();\n\n        // Write out size as capacity for behavioral compatibility with clone()\n        s.writeInt(size);\n\n        // Write out all elements in the proper order.\n        for (int i\u003d0; i\u003csize; i++) {\n            s.writeObject(elementData[i]);\n        }\n\n        if (modCount !\u003d expectedModCount) {\n            throw new ConcurrentModificationException();\n        }\n    }\n\n    /**\n     * Reconstitutes the {@code ArrayList} instance from a stream (that is,\n     * deserializes it).\n     * @param s the stream\n     * @throws ClassNotFoundException if the class of a serialized object\n     *         could not be found\n     * @throws java.io.IOException if an I/O error occurs\n     */\n    @java.io.Serial\n    private void readObject(java.io.ObjectInputStream s)\n        throws java.io.IOException, ClassNotFoundException {\n\n        // Read in size, and any hidden stuff\n        s.defaultReadObject();\n\n        // Read in capacity\n        s.readInt(); // ignored\n\n        if (size \u003e 0) {\n            // like clone(), allocate array based upon size not capacity\n            SharedSecrets.getJavaObjectInputStreamAccess().checkArray(s, Object[].class, size);\n            Object[] elements \u003d new Object[size];\n\n            // Read in all elements in the proper order.\n            for (int i \u003d 0; i \u003c size; i++) {\n                elements[i] \u003d s.readObject();\n            }\n\n            elementData \u003d elements;\n        } else if (size \u003d\u003d 0) {\n            elementData \u003d EMPTY_ELEMENTDATA;\n        } else {\n            throw new java.io.InvalidObjectException(\"Invalid size: \" + size);\n        }\n    }\n\n    /**\n     * Returns a list iterator over the elements in this list (in proper\n     * sequence), starting at the specified position in the list.\n     * The specified index indicates the first element that would be\n     * returned by an initial call to {@link ListIterator#next next}.\n     * An initial call to {@link ListIterator#previous previous} would\n     * return the element with the specified index minus one.\n     *\n     * \u003cp\u003eThe returned list iterator is \u003ca href\u003d\"#fail-fast\"\u003e\u003ci\u003efail-fast\u003c/i\u003e\u003c/a\u003e.\n     *\n     * @throws IndexOutOfBoundsException {@inheritDoc}\n     */\n    public ListIterator\u003cE\u003e listIterator(int index) {\n        rangeCheckForAdd(index);\n        return new ListItr(index);\n    }\n\n    /**\n     * Returns a list iterator over the elements in this list (in proper\n     * sequence).\n     *\n     * \u003cp\u003eThe returned list iterator is \u003ca href\u003d\"#fail-fast\"\u003e\u003ci\u003efail-fast\u003c/i\u003e\u003c/a\u003e.\n     *\n     * @see #listIterator(int)\n     */\n    public ListIterator\u003cE\u003e listIterator() {\n        return new ListItr(0);\n    }\n\n    /**\n     * Returns an iterator over the elements in this list in proper sequence.\n     *\n     * \u003cp\u003eThe returned iterator is \u003ca href\u003d\"#fail-fast\"\u003e\u003ci\u003efail-fast\u003c/i\u003e\u003c/a\u003e.\n     *\n     * @return an iterator over the elements in this list in proper sequence\n     */\n    public Iterator\u003cE\u003e iterator() {\n        return new Itr();\n    }\n\n    /**\n     * An optimized version of AbstractList.Itr\n     */\n    private class Itr implements Iterator\u003cE\u003e {\n        int cursor;       // index of next element to return\n        int lastRet \u003d -1; // index of last element returned; -1 if no such\n        int expectedModCount \u003d modCount;\n\n        // prevent creating a synthetic constructor\n        Itr() {}\n\n        public boolean hasNext() {\n            return cursor !\u003d size;\n        }\n\n        @SuppressWarnings(\"unchecked\")\n        public E next() {\n            checkForComodification();\n            int i \u003d cursor;\n            if (i \u003e\u003d size)\n                throw new NoSuchElementException();\n            Object[] elementData \u003d ArrayList.this.elementData;\n            if (i \u003e\u003d elementData.length)\n                throw new ConcurrentModificationException();\n            cursor \u003d i + 1;\n            return (E) elementData[lastRet \u003d i];\n        }\n\n        public void remove() {\n            if (lastRet \u003c 0)\n                throw new IllegalStateException();\n            checkForComodification();\n\n            try {\n                ArrayList.this.remove(lastRet);\n                cursor \u003d lastRet;\n                lastRet \u003d -1;\n                expectedModCount \u003d modCount;\n            } catch (IndexOutOfBoundsException ex) {\n                throw new ConcurrentModificationException();\n            }\n        }\n\n        @Override\n        public void forEachRemaining(Consumer\u003c? super E\u003e action) {\n            Objects.requireNonNull(action);\n            final int size \u003d ArrayList.this.size;\n            int i \u003d cursor;\n            if (i \u003c size) {\n                final Object[] es \u003d elementData;\n                if (i \u003e\u003d es.length)\n                    throw new ConcurrentModificationException();\n                for (; i \u003c size \u0026\u0026 modCount \u003d\u003d expectedModCount; i++)\n                    action.accept(elementAt(es, i));\n                // update once at end to reduce heap write traffic\n                cursor \u003d i;\n                lastRet \u003d i - 1;\n                checkForComodification();\n            }\n        }\n\n        final void checkForComodification() {\n            if (modCount !\u003d expectedModCount)\n                throw new ConcurrentModificationException();\n        }\n    }\n\n    /**\n     * An optimized version of AbstractList.ListItr\n     */\n    private class ListItr extends Itr implements ListIterator\u003cE\u003e {\n        ListItr(int index) {\n            super();\n            cursor \u003d index;\n        }\n\n        public boolean hasPrevious() {\n            return cursor !\u003d 0;\n        }\n\n        public int nextIndex() {\n            return cursor;\n        }\n\n        public int previousIndex() {\n            return cursor - 1;\n        }\n\n        @SuppressWarnings(\"unchecked\")\n        public E previous() {\n            checkForComodification();\n            int i \u003d cursor - 1;\n            if (i \u003c 0)\n                throw new NoSuchElementException();\n            Object[] elementData \u003d ArrayList.this.elementData;\n            if (i \u003e\u003d elementData.length)\n                throw new ConcurrentModificationException();\n            cursor \u003d i;\n            return (E) elementData[lastRet \u003d i];\n        }\n\n        public void set(E e) {\n            if (lastRet \u003c 0)\n                throw new IllegalStateException();\n            checkForComodification();\n\n            try {\n                ArrayList.this.set(lastRet, e);\n            } catch (IndexOutOfBoundsException ex) {\n                throw new ConcurrentModificationException();\n            }\n        }\n\n        public void add(E e) {\n            checkForComodification();\n\n            try {\n                int i \u003d cursor;\n                ArrayList.this.add(i, e);\n                cursor \u003d i + 1;\n                lastRet \u003d -1;\n                expectedModCount \u003d modCount;\n            } catch (IndexOutOfBoundsException ex) {\n                throw new ConcurrentModificationException();\n            }\n        }\n    }\n\n    /**\n     * Returns a view of the portion of this list between the specified\n     * {@code fromIndex}, inclusive, and {@code toIndex}, exclusive.  (If\n     * {@code fromIndex} and {@code toIndex} are equal, the returned list is\n     * empty.)  The returned list is backed by this list, so non-structural\n     * changes in the returned list are reflected in this list, and vice-versa.\n     * The returned list supports all of the optional list operations.\n     *\n     * \u003cp\u003eThis method eliminates the need for explicit range operations (of\n     * the sort that commonly exist for arrays).  Any operation that expects\n     * a list can be used as a range operation by passing a subList view\n     * instead of a whole list.  For example, the following idiom\n     * removes a range of elements from a list:\n     * \u003cpre\u003e\n     *      list.subList(from, to).clear();\n     * \u003c/pre\u003e\n     * Similar idioms may be constructed for {@link #indexOf(Object)} and\n     * {@link #lastIndexOf(Object)}, and all of the algorithms in the\n     * {@link Collections} class can be applied to a subList.\n     *\n     * \u003cp\u003eThe semantics of the list returned by this method become undefined if\n     * the backing list (i.e., this list) is \u003ci\u003estructurally modified\u003c/i\u003e in\n     * any way other than via the returned list.  (Structural modifications are\n     * those that change the size of this list, or otherwise perturb it in such\n     * a fashion that iterations in progress may yield incorrect results.)\n     *\n     * @throws IndexOutOfBoundsException {@inheritDoc}\n     * @throws IllegalArgumentException {@inheritDoc}\n     */\n    public List\u003cE\u003e subList(int fromIndex, int toIndex) {\n        subListRangeCheck(fromIndex, toIndex, size);\n        return new SubList\u003c\u003e(this, fromIndex, toIndex);\n    }\n\n    private static class SubList\u003cE\u003e extends AbstractList\u003cE\u003e implements RandomAccess {\n        private final ArrayList\u003cE\u003e root;\n        private final SubList\u003cE\u003e parent;\n        private final int offset;\n        private int size;\n\n        /**\n         * Constructs a sublist of an arbitrary ArrayList.\n         */\n        public SubList(ArrayList\u003cE\u003e root, int fromIndex, int toIndex) {\n            this.root \u003d root;\n            this.parent \u003d null;\n            this.offset \u003d fromIndex;\n            this.size \u003d toIndex - fromIndex;\n            this.modCount \u003d root.modCount;\n        }\n\n        /**\n         * Constructs a sublist of another SubList.\n         */\n        private SubList(SubList\u003cE\u003e parent, int fromIndex, int toIndex) {\n            this.root \u003d parent.root;\n            this.parent \u003d parent;\n            this.offset \u003d parent.offset + fromIndex;\n            this.size \u003d toIndex - fromIndex;\n            this.modCount \u003d parent.modCount;\n        }\n\n        public E set(int index, E element) {\n            Objects.checkIndex(index, size);\n            checkForComodification();\n            E oldValue \u003d root.elementData(offset + index);\n            root.elementData[offset + index] \u003d element;\n            return oldValue;\n        }\n\n        public E get(int index) {\n            Objects.checkIndex(index, size);\n            checkForComodification();\n            return root.elementData(offset + index);\n        }\n\n        public int size() {\n            checkForComodification();\n            return size;\n        }\n\n        public void add(int index, E element) {\n            rangeCheckForAdd(index);\n            checkForComodification();\n            root.add(offset + index, element);\n            updateSizeAndModCount(1);\n        }\n\n        public E remove(int index) {\n            Objects.checkIndex(index, size);\n            checkForComodification();\n            E result \u003d root.remove(offset + index);\n            updateSizeAndModCount(-1);\n            return result;\n        }\n\n        protected void removeRange(int fromIndex, int toIndex) {\n            checkForComodification();\n            root.removeRange(offset + fromIndex, offset + toIndex);\n            updateSizeAndModCount(fromIndex - toIndex);\n        }\n\n        public boolean addAll(Collection\u003c? extends E\u003e c) {\n            return addAll(this.size, c);\n        }\n\n        public boolean addAll(int index, Collection\u003c? extends E\u003e c) {\n            rangeCheckForAdd(index);\n            int cSize \u003d c.size();\n            if (cSize\u003d\u003d0)\n                return false;\n            checkForComodification();\n            root.addAll(offset + index, c);\n            updateSizeAndModCount(cSize);\n            return true;\n        }\n\n        public void replaceAll(UnaryOperator\u003cE\u003e operator) {\n            root.replaceAllRange(operator, offset, offset + size);\n        }\n\n        public boolean removeAll(Collection\u003c?\u003e c) {\n            return batchRemove(c, false);\n        }\n\n        public boolean retainAll(Collection\u003c?\u003e c) {\n            return batchRemove(c, true);\n        }\n\n        private boolean batchRemove(Collection\u003c?\u003e c, boolean complement) {\n            checkForComodification();\n            int oldSize \u003d root.size;\n            boolean modified \u003d\n                root.batchRemove(c, complement, offset, offset + size);\n            if (modified)\n                updateSizeAndModCount(root.size - oldSize);\n            return modified;\n        }\n\n        public boolean removeIf(Predicate\u003c? super E\u003e filter) {\n            checkForComodification();\n            int oldSize \u003d root.size;\n            boolean modified \u003d root.removeIf(filter, offset, offset + size);\n            if (modified)\n                updateSizeAndModCount(root.size - oldSize);\n            return modified;\n        }\n\n        public Object[] toArray() {\n            checkForComodification();\n            return Arrays.copyOfRange(root.elementData, offset, offset + size);\n        }\n\n        @SuppressWarnings(\"unchecked\")\n        public \u003cT\u003e T[] toArray(T[] a) {\n            checkForComodification();\n            if (a.length \u003c size)\n                return (T[]) Arrays.copyOfRange(\n                        root.elementData, offset, offset + size, a.getClass());\n            System.arraycopy(root.elementData, offset, a, 0, size);\n            if (a.length \u003e size)\n                a[size] \u003d null;\n            return a;\n        }\n\n        public boolean equals(Object o) {\n            if (o \u003d\u003d this) {\n                return true;\n            }\n\n            if (!(o instanceof List)) {\n                return false;\n            }\n\n            boolean equal \u003d root.equalsRange((List\u003c?\u003e)o, offset, offset + size);\n            checkForComodification();\n            return equal;\n        }\n\n        public int hashCode() {\n            int hash \u003d root.hashCodeRange(offset, offset + size);\n            checkForComodification();\n            return hash;\n        }\n\n        public int indexOf(Object o) {\n            int index \u003d root.indexOfRange(o, offset, offset + size);\n            checkForComodification();\n            return index \u003e\u003d 0 ? index - offset : -1;\n        }\n\n        public int lastIndexOf(Object o) {\n            int index \u003d root.lastIndexOfRange(o, offset, offset + size);\n            checkForComodification();\n            return index \u003e\u003d 0 ? index - offset : -1;\n        }\n\n        public boolean contains(Object o) {\n            return indexOf(o) \u003e\u003d 0;\n        }\n\n        public Iterator\u003cE\u003e iterator() {\n            return listIterator();\n        }\n\n        public ListIterator\u003cE\u003e listIterator(int index) {\n            checkForComodification();\n            rangeCheckForAdd(index);\n\n            return new ListIterator\u003cE\u003e() {\n                int cursor \u003d index;\n                int lastRet \u003d -1;\n                int expectedModCount \u003d SubList.this.modCount;\n\n                public boolean hasNext() {\n                    return cursor !\u003d SubList.this.size;\n                }\n\n                @SuppressWarnings(\"unchecked\")\n                public E next() {\n                    checkForComodification();\n                    int i \u003d cursor;\n                    if (i \u003e\u003d SubList.this.size)\n                        throw new NoSuchElementException();\n                    Object[] elementData \u003d root.elementData;\n                    if (offset + i \u003e\u003d elementData.length)\n                        throw new ConcurrentModificationException();\n                    cursor \u003d i + 1;\n                    return (E) elementData[offset + (lastRet \u003d i)];\n                }\n\n                public boolean hasPrevious() {\n                    return cursor !\u003d 0;\n                }\n\n                @SuppressWarnings(\"unchecked\")\n                public E previous() {\n                    checkForComodification();\n                    int i \u003d cursor - 1;\n                    if (i \u003c 0)\n                        throw new NoSuchElementException();\n                    Object[] elementData \u003d root.elementData;\n                    if (offset + i \u003e\u003d elementData.length)\n                        throw new ConcurrentModificationException();\n                    cursor \u003d i;\n                    return (E) elementData[offset + (lastRet \u003d i)];\n                }\n\n                public void forEachRemaining(Consumer\u003c? super E\u003e action) {\n                    Objects.requireNonNull(action);\n                    final int size \u003d SubList.this.size;\n                    int i \u003d cursor;\n                    if (i \u003c size) {\n                        final Object[] es \u003d root.elementData;\n                        if (offset + i \u003e\u003d es.length)\n                            throw new ConcurrentModificationException();\n                        for (; i \u003c size \u0026\u0026 root.modCount \u003d\u003d expectedModCount; i++)\n                            action.accept(elementAt(es, offset + i));\n                        // update once at end to reduce heap write traffic\n                        cursor \u003d i;\n                        lastRet \u003d i - 1;\n                        checkForComodification();\n                    }\n                }\n\n                public int nextIndex() {\n                    return cursor;\n                }\n\n                public int previousIndex() {\n                    return cursor - 1;\n                }\n\n                public void remove() {\n                    if (lastRet \u003c 0)\n                        throw new IllegalStateException();\n                    checkForComodification();\n\n                    try {\n                        SubList.this.remove(lastRet);\n                        cursor \u003d lastRet;\n                        lastRet \u003d -1;\n                        expectedModCount \u003d SubList.this.modCount;\n                    } catch (IndexOutOfBoundsException ex) {\n                        throw new ConcurrentModificationException();\n                    }\n                }\n\n                public void set(E e) {\n                    if (lastRet \u003c 0)\n                        throw new IllegalStateException();\n                    checkForComodification();\n\n                    try {\n                        root.set(offset + lastRet, e);\n                    } catch (IndexOutOfBoundsException ex) {\n                        throw new ConcurrentModificationException();\n                    }\n                }\n\n                public void add(E e) {\n                    checkForComodification();\n\n                    try {\n                        int i \u003d cursor;\n                        SubList.this.add(i, e);\n                        cursor \u003d i + 1;\n                        lastRet \u003d -1;\n                        expectedModCount \u003d SubList.this.modCount;\n                    } catch (IndexOutOfBoundsException ex) {\n                        throw new ConcurrentModificationException();\n                    }\n                }\n\n                final void checkForComodification() {\n                    if (root.modCount !\u003d expectedModCount)\n                        throw new ConcurrentModificationException();\n                }\n            };\n        }\n\n        public List\u003cE\u003e subList(int fromIndex, int toIndex) {\n            subListRangeCheck(fromIndex, toIndex, size);\n            return new SubList\u003c\u003e(this, fromIndex, toIndex);\n        }\n\n        private void rangeCheckForAdd(int index) {\n            if (index \u003c 0 || index \u003e this.size)\n                throw new IndexOutOfBoundsException(outOfBoundsMsg(index));\n        }\n\n        private String outOfBoundsMsg(int index) {\n            return \"Index: \"+index+\", Size: \"+this.size;\n        }\n\n        private void checkForComodification() {\n            if (root.modCount !\u003d modCount)\n                throw new ConcurrentModificationException();\n        }\n\n        private void updateSizeAndModCount(int sizeChange) {\n            SubList\u003cE\u003e slist \u003d this;\n            do {\n                slist.size +\u003d sizeChange;\n                slist.modCount \u003d root.modCount;\n                slist \u003d slist.parent;\n            } while (slist !\u003d null);\n        }\n\n        public Spliterator\u003cE\u003e spliterator() {\n            checkForComodification();\n\n            // ArrayListSpliterator not used here due to late-binding\n            return new Spliterator\u003cE\u003e() {\n                private int index \u003d offset; // current index, modified on advance/split\n                private int fence \u003d -1; // -1 until used; then one past last index\n                private int expectedModCount; // initialized when fence set\n\n                private int getFence() { // initialize fence to size on first use\n                    int hi; // (a specialized variant appears in method forEach)\n                    if ((hi \u003d fence) \u003c 0) {\n                        expectedModCount \u003d modCount;\n                        hi \u003d fence \u003d offset + size;\n                    }\n                    return hi;\n                }\n\n                public ArrayList\u003cE\u003e.ArrayListSpliterator trySplit() {\n                    int hi \u003d getFence(), lo \u003d index, mid \u003d (lo + hi) \u003e\u003e\u003e 1;\n                    // ArrayListSpliterator can be used here as the source is already bound\n                    return (lo \u003e\u003d mid) ? null : // divide range in half unless too small\n                        root.new ArrayListSpliterator(lo, index \u003d mid, expectedModCount);\n                }\n\n                public boolean tryAdvance(Consumer\u003c? super E\u003e action) {\n                    Objects.requireNonNull(action);\n                    int hi \u003d getFence(), i \u003d index;\n                    if (i \u003c hi) {\n                        index \u003d i + 1;\n                        @SuppressWarnings(\"unchecked\") E e \u003d (E)root.elementData[i];\n                        action.accept(e);\n                        if (root.modCount !\u003d expectedModCount)\n                            throw new ConcurrentModificationException();\n                        return true;\n                    }\n                    return false;\n                }\n\n                public void forEachRemaining(Consumer\u003c? super E\u003e action) {\n                    Objects.requireNonNull(action);\n                    int i, hi, mc; // hoist accesses and checks from loop\n                    ArrayList\u003cE\u003e lst \u003d root;\n                    Object[] a;\n                    if ((a \u003d lst.elementData) !\u003d null) {\n                        if ((hi \u003d fence) \u003c 0) {\n                            mc \u003d modCount;\n                            hi \u003d offset + size;\n                        }\n                        else\n                            mc \u003d expectedModCount;\n                        if ((i \u003d index) \u003e\u003d 0 \u0026\u0026 (index \u003d hi) \u003c\u003d a.length) {\n                            for (; i \u003c hi; ++i) {\n                                @SuppressWarnings(\"unchecked\") E e \u003d (E) a[i];\n                                action.accept(e);\n                            }\n                            if (lst.modCount \u003d\u003d mc)\n                                return;\n                        }\n                    }\n                    throw new ConcurrentModificationException();\n                }\n\n                public long estimateSize() {\n                    return getFence() - index;\n                }\n\n                public int characteristics() {\n                    return Spliterator.ORDERED | Spliterator.SIZED | Spliterator.SUBSIZED;\n                }\n            };\n        }\n    }\n\n    /**\n     * @throws NullPointerException {@inheritDoc}\n     */\n    @Override\n    public void forEach(Consumer\u003c? super E\u003e action) {\n        Objects.requireNonNull(action);\n        final int expectedModCount \u003d modCount;\n        final Object[] es \u003d elementData;\n        final int size \u003d this.size;\n        for (int i \u003d 0; modCount \u003d\u003d expectedModCount \u0026\u0026 i \u003c size; i++)\n            action.accept(elementAt(es, i));\n        if (modCount !\u003d expectedModCount)\n            throw new ConcurrentModificationException();\n    }\n\n    /**\n     * Creates a \u003cem\u003e\u003ca href\u003d\"Spliterator.html#binding\"\u003elate-binding\u003c/a\u003e\u003c/em\u003e\n     * and \u003cem\u003efail-fast\u003c/em\u003e {@link Spliterator} over the elements in this\n     * list.\n     *\n     * \u003cp\u003eThe {@code Spliterator} reports {@link Spliterator#SIZED},\n     * {@link Spliterator#SUBSIZED}, and {@link Spliterator#ORDERED}.\n     * Overriding implementations should document the reporting of additional\n     * characteristic values.\n     *\n     * @return a {@code Spliterator} over the elements in this list\n     * @since 1.8\n     */\n    @Override\n    public Spliterator\u003cE\u003e spliterator() {\n        return new ArrayListSpliterator(0, -1, 0);\n    }\n\n    /** Index-based split-by-two, lazily initialized Spliterator */\n    final class ArrayListSpliterator implements Spliterator\u003cE\u003e {\n\n        /*\n         * If ArrayLists were immutable, or structurally immutable (no\n         * adds, removes, etc), we could implement their spliterators\n         * with Arrays.spliterator. Instead we detect as much\n         * interference during traversal as practical without\n         * sacrificing much performance. We rely primarily on\n         * modCounts. These are not guaranteed to detect concurrency\n         * violations, and are sometimes overly conservative about\n         * within-thread interference, but detect enough problems to\n         * be worthwhile in practice. To carry this out, we (1) lazily\n         * initialize fence and expectedModCount until the latest\n         * point that we need to commit to the state we are checking\n         * against; thus improving precision.  (This doesn\u0027t apply to\n         * SubLists, that create spliterators with current non-lazy\n         * values).  (2) We perform only a single\n         * ConcurrentModificationException check at the end of forEach\n         * (the most performance-sensitive method). When using forEach\n         * (as opposed to iterators), we can normally only detect\n         * interference after actions, not before. Further\n         * CME-triggering checks apply to all other possible\n         * violations of assumptions for example null or too-small\n         * elementData array given its size(), that could only have\n         * occurred due to interference.  This allows the inner loop\n         * of forEach to run without any further checks, and\n         * simplifies lambda-resolution. While this does entail a\n         * number of checks, note that in the common case of\n         * list.stream().forEach(a), no checks or other computation\n         * occur anywhere other than inside forEach itself.  The other\n         * less-often-used methods cannot take advantage of most of\n         * these streamlinings.\n         */\n\n        private int index; // current index, modified on advance/split\n        private int fence; // -1 until used; then one past last index\n        private int expectedModCount; // initialized when fence set\n\n        /** Creates new spliterator covering the given range. */\n        ArrayListSpliterator(int origin, int fence, int expectedModCount) {\n            this.index \u003d origin;\n            this.fence \u003d fence;\n            this.expectedModCount \u003d expectedModCount;\n        }\n\n        private int getFence() { // initialize fence to size on first use\n            int hi; // (a specialized variant appears in method forEach)\n            if ((hi \u003d fence) \u003c 0) {\n                expectedModCount \u003d modCount;\n                hi \u003d fence \u003d size;\n            }\n            return hi;\n        }\n\n        public ArrayListSpliterator trySplit() {\n            int hi \u003d getFence(), lo \u003d index, mid \u003d (lo + hi) \u003e\u003e\u003e 1;\n            return (lo \u003e\u003d mid) ? null : // divide range in half unless too small\n                new ArrayListSpliterator(lo, index \u003d mid, expectedModCount);\n        }\n\n        public boolean tryAdvance(Consumer\u003c? super E\u003e action) {\n            if (action \u003d\u003d null)\n                throw new NullPointerException();\n            int hi \u003d getFence(), i \u003d index;\n            if (i \u003c hi) {\n                index \u003d i + 1;\n                @SuppressWarnings(\"unchecked\") E e \u003d (E)elementData[i];\n                action.accept(e);\n                if (modCount !\u003d expectedModCount)\n                    throw new ConcurrentModificationException();\n                return true;\n            }\n            return false;\n        }\n\n        public void forEachRemaining(Consumer\u003c? super E\u003e action) {\n            int i, hi, mc; // hoist accesses and checks from loop\n            Object[] a;\n            if (action \u003d\u003d null)\n                throw new NullPointerException();\n            if ((a \u003d elementData) !\u003d null) {\n                if ((hi \u003d fence) \u003c 0) {\n                    mc \u003d modCount;\n                    hi \u003d size;\n                }\n                else\n                    mc \u003d expectedModCount;\n                if ((i \u003d index) \u003e\u003d 0 \u0026\u0026 (index \u003d hi) \u003c\u003d a.length) {\n                    for (; i \u003c hi; ++i) {\n                        @SuppressWarnings(\"unchecked\") E e \u003d (E) a[i];\n                        action.accept(e);\n                    }\n                    if (modCount \u003d\u003d mc)\n                        return;\n                }\n            }\n            throw new ConcurrentModificationException();\n        }\n\n        public long estimateSize() {\n            return getFence() - index;\n        }\n\n        public int characteristics() {\n            return Spliterator.ORDERED | Spliterator.SIZED | Spliterator.SUBSIZED;\n        }\n    }\n\n    // A tiny bit set implementation\n\n    private static long[] nBits(int n) {\n        return new long[((n - 1) \u003e\u003e 6) + 1];\n    }\n    private static void setBit(long[] bits, int i) {\n        bits[i \u003e\u003e 6] |\u003d 1L \u003c\u003c i;\n    }\n    private static boolean isClear(long[] bits, int i) {\n        return (bits[i \u003e\u003e 6] \u0026 (1L \u003c\u003c i)) \u003d\u003d 0;\n    }\n\n    /**\n     * @throws NullPointerException {@inheritDoc}\n     */\n    @Override\n    public boolean removeIf(Predicate\u003c? super E\u003e filter) {\n        return removeIf(filter, 0, size);\n    }\n\n    /**\n     * Removes all elements satisfying the given predicate, from index\n     * i (inclusive) to index end (exclusive).\n     */\n    boolean removeIf(Predicate\u003c? super E\u003e filter, int i, final int end) {\n        Objects.requireNonNull(filter);\n        int expectedModCount \u003d modCount;\n        final Object[] es \u003d elementData;\n        // Optimize for initial run of survivors\n        for (; i \u003c end \u0026\u0026 !filter.test(elementAt(es, i)); i++)\n            ;\n        // Tolerate predicates that reentrantly access the collection for\n        // read (but writers still get CME), so traverse once to find\n        // elements to delete, a second pass to physically expunge.\n        if (i \u003c end) {\n            final int beg \u003d i;\n            final long[] deathRow \u003d nBits(end - beg);\n            deathRow[0] \u003d 1L;   // set bit 0\n            for (i \u003d beg + 1; i \u003c end; i++)\n                if (filter.test(elementAt(es, i)))\n                    setBit(deathRow, i - beg);\n            if (modCount !\u003d expectedModCount)\n                throw new ConcurrentModificationException();\n            modCount++;\n            int w \u003d beg;\n            for (i \u003d beg; i \u003c end; i++)\n                if (isClear(deathRow, i - beg))\n                    es[w++] \u003d es[i];\n            shiftTailOverGap(es, w, end);\n            return true;\n        } else {\n            if (modCount !\u003d expectedModCount)\n                throw new ConcurrentModificationException();\n            return false;\n        }\n    }\n\n    @Override\n    public void replaceAll(UnaryOperator\u003cE\u003e operator) {\n        replaceAllRange(operator, 0, size);\n        // TODO(8203662): remove increment of modCount from ...\n        modCount++;\n    }\n\n    private void replaceAllRange(UnaryOperator\u003cE\u003e operator, int i, int end) {\n        Objects.requireNonNull(operator);\n        final int expectedModCount \u003d modCount;\n        final Object[] es \u003d elementData;\n        for (; modCount \u003d\u003d expectedModCount \u0026\u0026 i \u003c end; i++)\n            es[i] \u003d operator.apply(elementAt(es, i));\n        if (modCount !\u003d expectedModCount)\n            throw new ConcurrentModificationException();\n    }\n\n    @Override\n    @SuppressWarnings(\"unchecked\")\n    public void sort(Comparator\u003c? super E\u003e c) {\n        final int expectedModCount \u003d modCount;\n        Arrays.sort((E[]) elementData, 0, size, c);\n        if (modCount !\u003d expectedModCount)\n            throw new ConcurrentModificationException();\n        modCount++;\n    }\n\n    void checkInvariants() {\n        // assert size \u003e\u003d 0;\n        // assert size \u003d\u003d elementData.length || elementData[size] \u003d\u003d null;\n    }\n}\n"
+    }
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in opaque part at index 22: jar:file:///C:/Program Files/Java/jdk-17/lib/src.zip!/java.base/java/util/ArrayList.java
+	at java.base/java.net.URI.create(URI.java:906)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:177)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.$anonfun$toAbsolutePath$3(MtagsEnrichments.scala:174)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.withTryDecode$1(MtagsEnrichments.scala:153)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:174)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:684)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:681)
+	at scala.meta.internal.metals.WorkspaceLspService.didOpen(WorkspaceLspService.scala:339)
+	at scala.meta.metals.lsp.DelegatingScalaService.didOpen(DelegatingScalaService.scala:39)
+	... 16 more
+Caused by: java.net.URISyntaxException: Illegal character in opaque part at index 22: jar:file:///C:/Program Files/Java/jdk-17/lib/src.zip!/java.base/java/util/ArrayList.java
+	at java.base/java.net.URI$Parser.fail(URI.java:2974)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3145)
+	at java.base/java.net.URI$Parser.parse(URI.java:3181)
+	at java.base/java.net.URI.<init>(URI.java:623)
+	at java.base/java.net.URI.create(URI.java:904)
+	... 24 more
+
+ene 27, 2024 3:31:41 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didClose",
+  "params": {
+    "textDocument": {
+      "uri": "jar:file%3A///C%3A/Program%20Files/Java/jdk-17/lib/src.zip%21/java.base/java/util/ArrayList.java"
+    }
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in opaque part at index 22: jar:file:///C:/Program Files/Java/jdk-17/lib/src.zip!/java.base/java/util/ArrayList.java
+	at java.base/java.net.URI.create(URI.java:906)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:177)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.$anonfun$toAbsolutePath$3(MtagsEnrichments.scala:174)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.withTryDecode$1(MtagsEnrichments.scala:153)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:174)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:684)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:681)
+	at scala.meta.internal.metals.WorkspaceLspService.didClose(WorkspaceLspService.scala:358)
+	at scala.meta.metals.lsp.DelegatingScalaService.didClose(DelegatingScalaService.scala:53)
+	... 16 more
+Caused by: java.net.URISyntaxException: Illegal character in opaque part at index 22: jar:file:///C:/Program Files/Java/jdk-17/lib/src.zip!/java.base/java/util/ArrayList.java
+	at java.base/java.net.URI$Parser.fail(URI.java:2974)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3145)
+	at java.base/java.net.URI$Parser.parse(URI.java:3181)
+	at java.base/java.net.URI.<init>(URI.java:623)
+	at java.base/java.net.URI.create(URI.java:904)
+	... 24 more
+
+ene 27, 2024 3:31:56 P. M. scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: offset 6944, count -1, length 6961
+2024.01.27 15:31:59 INFO  compiling root-test (1 scala source)
+2024.01.27 15:32:00 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:31:59 INFO  time: compiled root-test in 0.65s
+ene 27, 2024 3:32:05 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 369
+2024.01.27 15:32:10 INFO  compiling root-test (1 scala source)
+ene 27, 2024 3:32:10 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 399
+2024.01.27 15:32:10 INFO  Deduplicating compilation of root-test from bsp client 'Metals 1.2.0' (since 2m 16.662s)
+2024.01.27 15:32:10 INFO  compiling root-test (1 scala source)
+2024.01.27 15:32:10 INFO  time: compiled root-test in 0.48s
+2024.01.27 15:32:11 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:32:11 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:32:11 INFO  Starting debug proxy for [test.scala.Tests(JavaFunctions can't distribute actions)]
+2024.01.27 15:32:11 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53234 .
+2024.01.27 15:32:11 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:32:11 INFO  Closing debug server tcp://0.0.0.0:53231
+2024.01.27 15:32:11 INFO  Canceling debug proxy for [test.scala.Tests(JavaFunctions can't distribute actions)]
+2024.01.27 15:33:09 INFO  compiling root-test (1 scala source)
+2024.01.27 15:33:09 INFO  time: compiled root-test in 0.18s
+ene 27, 2024 3:33:10 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+	at scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$.<clinit>(DebugProvider.scala:912)
+	at scala.meta.internal.metals.debug.DebugProvider.ensureNoWorkspaceErrors(DebugProvider.scala:388)
+	at scala.meta.internal.metals.debug.DebugProvider.$anonfun$startTestSuite$4(DebugProvider.scala:681)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	... 3 more
+
+2024.01.27 15:33:09 INFO  compiling root-test (1 scala source)
+2024.01.27 15:33:09 INFO  time: compiled root-test in 99ms
+2024.01.27 15:33:10 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:33:24 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:33:24 INFO  compiling root-test (1 scala source)
+2024.01.27 15:33:24 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:33:24 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:33:24 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:33:24 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:33:24 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:33:24 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:33:24 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:33:24 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:33:24 INFO  time: compiled root-test in 0.13s
+2024.01.27 15:33:25 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:33:26 INFO  compiling root-test (1 scala source)
+2024.01.27 15:33:26 INFO  time: compiled root-test in 0.14s
+ene 27, 2024 3:33:26 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+	at scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$.<clinit>(DebugProvider.scala:912)
+	at scala.meta.internal.metals.debug.DebugProvider.ensureNoWorkspaceErrors(DebugProvider.scala:388)
+	at scala.meta.internal.metals.debug.DebugProvider.$anonfun$startTestSuite$4(DebugProvider.scala:681)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	... 3 more
+
+2024.01.27 15:33:27 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:33:29 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:33:30 INFO  compiling root-test (1 scala source)
+2024.01.27 15:33:30 INFO  time: compiled root-test in 0.12s
+2024.01.27 15:33:30 INFO  compiling root-test (1 scala source)
+2024.01.27 15:33:30 INFO  time: compiled root-test in 98ms
+2024.01.27 15:33:31 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:33:32 INFO  compiling root-test (1 scala source)
+2024.01.27 15:33:32 INFO  time: compiled root-test in 0.12s
+ene 27, 2024 3:33:32 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+	at scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$.<clinit>(DebugProvider.scala:912)
+	at scala.meta.internal.metals.debug.DebugProvider.ensureNoWorkspaceErrors(DebugProvider.scala:388)
+	at scala.meta.internal.metals.debug.DebugProvider.$anonfun$startTestSuite$4(DebugProvider.scala:681)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	... 3 more
+
+2024.01.27 15:33:33 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:33:41 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:33:46 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:33:50 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:33:51 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:33:52 INFO  compiling root-test (1 scala source)
+2024.01.27 15:33:52 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:33:52 INFO  time: compiled root-test in 0.6s
+2024.01.27 15:33:53 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:33:53 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:33:53 INFO  Starting debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:33:53 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53255 .
+2024.01.27 15:33:53 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:33:53 INFO  Closing debug server tcp://0.0.0.0:53252
+2024.01.27 15:33:54 INFO  Canceling debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:34:13 INFO  compiling root-test (1 scala source)
+Exception in thread "pool-6-thread-2" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024.01.27 15:34:13 INFO  Deduplicating compilation of root-test from bsp client 'Metals 1.2.0' (since 4m 20.549s)
+2024.01.27 15:34:13 INFO  compiling root-test (1 scala source)
+2024.01.27 15:34:13 INFO  time: compiled root-test in 0.29s
+2024.01.27 15:34:14 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:34:14 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:34:14 INFO  Starting debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:34:14 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53264 .
+2024.01.27 15:34:14 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:34:14 INFO  Canceling debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:34:14 INFO  Closing debug server tcp://0.0.0.0:53261
+2024.01.27 15:35:20 INFO  compiling root-test (1 scala source)
+2024.01.27 15:35:20 INFO  time: compiled root-test in 0.11s
+2024.01.27 15:35:21 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:35:21 INFO  compiling root-test (1 scala source)
+2024.01.27 15:35:21 INFO  time: compiled root-test in 0.12s
+ene 27, 2024 3:35:21 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+	at scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$.<clinit>(DebugProvider.scala:912)
+	at scala.meta.internal.metals.debug.DebugProvider.ensureNoWorkspaceErrors(DebugProvider.scala:388)
+	at scala.meta.internal.metals.debug.DebugProvider.$anonfun$startTestSuite$4(DebugProvider.scala:681)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	... 3 more
+
+2024.01.27 15:35:22 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:35:30 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:35:31 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:35:31 INFO  compiling root-test (1 scala source)
+2024.01.27 15:35:31 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:35:31 INFO  time: compiled root-test in 0.61s
+2024.01.27 15:35:42 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:35:42 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:35:42 INFO  Starting debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:35:42 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53279 .
+2024.01.27 15:35:42 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:35:43 INFO  Canceling debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:35:42 INFO  Closing debug server tcp://0.0.0.0:53276
+2024.01.27 15:36:52 INFO  compiling root-test (1 scala source)
+2024.01.27 15:36:52 INFO  time: compiled root-test in 0.81s
+2024.01.27 15:37:00 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:37:00 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:37:01 INFO  Starting debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:37:01 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53381 .
+2024.01.27 15:37:01 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:37:01 INFO  Canceling debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:37:01 INFO  Closing debug server tcp://0.0.0.0:53377
+2024.01.27 15:37:10 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:37:10 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:37:10 INFO  Starting debug proxy for [test.scala.Tests(Composite Menu Test)]
+2024.01.27 15:37:10 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53390 .
+2024.01.27 15:37:10 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:37:10 INFO  Canceling debug proxy for [test.scala.Tests(Composite Menu Test)]
+2024.01.27 15:37:10 INFO  Closing debug server tcp://0.0.0.0:53387
+2024.01.27 15:37:36 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:37:36 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:37:36 INFO  Starting debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:37:36 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53399 .
+2024.01.27 15:37:36 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:37:36 INFO  Canceling debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:37:36 INFO  Closing debug server tcp://0.0.0.0:53396
+2024.01.27 15:38:22 INFO  compiling root-test (1 scala source)
+2024.01.27 15:38:22 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:38:22 INFO  time: compiled root-test in 0.58s
+2024.01.27 15:38:31 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:38:31 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:38:31 INFO  Starting debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:38:31 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53416 .
+2024.01.27 15:38:31 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:38:31 INFO  Canceling debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:38:31 INFO  Closing debug server tcp://0.0.0.0:53413
+2024.01.27 15:39:05 INFO  compiling root-test (1 scala source)
+2024.01.27 15:39:05 INFO  time: compiled root-test in 0.61s
+2024.01.27 15:39:11 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:39:11 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:39:11 INFO  Starting debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:39:11 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53431 .
+2024.01.27 15:39:11 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:39:11 INFO  Closing debug server tcp://0.0.0.0:53428
+2024.01.27 15:39:11 INFO  Canceling debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:39:33 INFO  compiling root-test (1 scala source)
+2024.01.27 15:39:33 INFO  Deduplicating compilation of root-test from bsp client 'Metals 1.2.0' (since 9m 39.579s)
+2024.01.27 15:39:33 INFO  compiling root-test (1 scala source)
+2024.01.27 15:39:33 INFO  time: compiled root-test in 0.46s
+2024.01.27 15:39:33 INFO  Deduplicating compilation of root from bsp client 'Metals 1.2.0' (since 9m 40.052s)
+2024.01.27 15:39:34 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:39:34 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:39:34 INFO  Starting debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:39:34 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53443 .
+2024.01.27 15:39:34 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:39:34 INFO  Canceling debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:39:34 INFO  Closing debug server tcp://0.0.0.0:53440
+2024.01.27 15:39:53 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:39:53 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:39:53 INFO  Starting debug proxy for [test.scala.Tests(word count test)]
+2024.01.27 15:39:53 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53453 .
+2024.01.27 15:39:53 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:39:53 INFO  Closing debug server tcp://0.0.0.0:53450
+2024.01.27 15:39:53 INFO  Canceling debug proxy for [test.scala.Tests(word count test)]
+2024.01.27 15:39:55 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:39:55 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:39:55 INFO  Starting debug proxy for [test.scala.Tests()]
+2024.01.27 15:39:55 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53461 .
+2024.01.27 15:39:55 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:39:55 INFO  Canceling debug proxy for [test.scala.Tests()]
+2024.01.27 15:39:55 INFO  Closing debug server tcp://0.0.0.0:53458
+2024.01.27 15:40:20 INFO  compiling root-test (1 scala source)
+2024.01.27 15:40:21 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:40:20 INFO  time: compiled root-test in 0.56s
+2024.01.27 15:40:23 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:40:23 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:40:23 INFO  Starting debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:40:23 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53471 .
+2024.01.27 15:40:23 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:40:23 INFO  Canceling debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:40:23 INFO  Closing debug server tcp://0.0.0.0:53468
+2024.01.27 15:40:33 ERROR Failed to tokenize input for semantic tokens for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+scala.meta.tokenizers.TokenizeException: <input>:152: error: unclosed comment
+    /*assertEquals(1, invoker.getActions().size());
+    ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:52)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:71)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:313)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:842)
+
+2024.01.27 15:40:36 ERROR Failed to tokenize input for semantic tokens for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+scala.meta.tokenizers.TokenizeException: <input>:152: error: unclosed comment
+    /*  assertEquals(1, invoker.getActions().size());
+    ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:52)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:71)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:313)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:842)
+
+2024.01.27 15:40:40 INFO  compiling root-test (1 scala source)
+2024.01.27 15:40:40 INFO  time: compiled root-test in 0.56s
+2024.01.27 15:42:20 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:42:20 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:42:20 INFO  Starting debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:42:20 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53491 .
+2024.01.27 15:42:20 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:42:20 INFO  Canceling debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:42:20 INFO  Closing debug server tcp://0.0.0.0:53488
+2024.01.27 15:42:29 INFO  compiling root-test (1 scala source)
+2024.01.27 15:42:29 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:42:29 INFO  time: compiled root-test in 0.58s
+2024.01.27 15:42:31 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:42:31 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:42:31 INFO  Starting debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:42:31 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53499 .
+2024.01.27 15:42:31 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:42:31 INFO  Closing debug server tcp://0.0.0.0:53496
+2024.01.27 15:42:31 INFO  Canceling debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:42:36 INFO  compiling root-test (1 scala source)
+2024.01.27 15:42:36 INFO  time: compiled root-test in 0.56s
+2024.01.27 15:42:38 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:42:38 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:42:38 INFO  Starting debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:42:38 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53507 .
+2024.01.27 15:42:38 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:42:39 INFO  Canceling debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:42:38 INFO  Closing debug server tcp://0.0.0.0:53504
+2024.01.27 15:42:55 INFO  compiling root-test (1 scala source)
+2024.01.27 15:42:55 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:42:55 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:42:55 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:42:55 INFO  time: compiled root-test in 0.6s
+2024.01.27 15:42:56 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:42:56 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:42:57 INFO  Starting debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:42:57 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53515 .
+2024.01.27 15:42:57 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:42:57 INFO  Canceling debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:42:57 INFO  Closing debug server tcp://0.0.0.0:53512
+2024.01.27 15:43:10 INFO  compiling root-test (1 scala source)
+2024.01.27 15:43:10 INFO  time: compiled root-test in 0.56s
+2024.01.27 15:43:12 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:43:12 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:43:12 INFO  Starting debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:43:12 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53526 .
+2024.01.27 15:43:12 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:43:13 INFO  Canceling debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:43:12 INFO  Closing debug server tcp://0.0.0.0:53523
+ene 27, 2024 3:43:13 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1062
+2024.01.27 15:43:20 INFO  compiling root-test (1 scala source)
+2024.01.27 15:43:20 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:43:20 INFO  time: compiled root-test in 0.59s
+ene 27, 2024 3:43:20 P. M. scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2024.01.27 15:43:20 INFO  Deduplicating compilation of root from bsp client 'Metals 1.2.0' (since 13m 27.1s)
+2024.01.27 15:43:20 INFO  Deduplicating compilation of root-test from bsp client 'Metals 1.2.0' (since 13m 27.109s)
+2024.01.27 15:43:20 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:43:20 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:43:20 INFO  Starting debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:43:20 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53534 .
+2024.01.27 15:43:20 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:43:20 INFO  Canceling debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:43:21 INFO  Closing debug server tcp://0.0.0.0:53531
+2024.01.27 15:43:28 INFO  compiling root-test (1 scala source)
+2024.01.27 15:43:28 INFO  time: compiled root-test in 0.11s
+2024.01.27 15:43:39 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:43:39 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:43:39 INFO  Starting debug proxy for [test.scala.Tests()]
+2024.01.27 15:43:39 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53542 .
+2024.01.27 15:43:39 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:43:39 INFO  Canceling debug proxy for [test.scala.Tests()]
+2024.01.27 15:43:39 INFO  Closing debug server tcp://0.0.0.0:53539
+ene 27, 2024 3:44:05 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1237
+2024.01.27 15:44:49 INFO  compiling root-test (1 scala source)
+2024.01.27 15:44:49 INFO  time: compiled root-test in 0.6s
+2024.01.27 15:44:49 INFO  Deduplicating compilation of root from bsp client 'Metals 1.2.0' (since 14m 55.991s)
+2024.01.27 15:44:49 INFO  Deduplicating compilation of root-test from bsp client 'Metals 1.2.0' (since 14m 56.014s)
+2024.01.27 15:44:49 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:44:49 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:44:49 INFO  Starting debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:44:49 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53553 .
+2024.01.27 15:44:49 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:44:50 INFO  Canceling debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:44:50 INFO  Closing debug server tcp://0.0.0.0:53549
+2024.01.27 15:44:57 INFO  compiling root-test (1 scala source)
+2024.01.27 15:44:58 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:44:57 INFO  time: compiled root-test in 0.58s
+2024.01.27 15:44:59 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:44:59 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:44:59 INFO  Starting debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:44:59 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53563 .
+2024.01.27 15:44:59 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:44:59 INFO  Canceling debug proxy for [test.scala.Tests(Java Functions Working)]
+2024.01.27 15:44:59 INFO  Closing debug server tcp://0.0.0.0:53560
+2024.01.27 15:45:24 INFO  compiling root-test (1 scala source)
+2024.01.27 15:45:24 INFO  time: compiled root-test in 0.58s
+2024.01.27 15:45:25 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:45:25 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:45:25 INFO  Starting debug proxy for [test.scala.Tests(JavaFunctions Can't distribute)]
+2024.01.27 15:45:25 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53573 .
+2024.01.27 15:45:25 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:45:25 INFO  Closing debug server tcp://0.0.0.0:53570
+2024.01.27 15:45:25 INFO  Canceling debug proxy for [test.scala.Tests(JavaFunctions Can't distribute)]
+2024.01.27 15:45:38 INFO  compiling root-test (1 scala source)
+2024.01.27 15:45:39 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:45:38 INFO  time: compiled root-test in 0.59s
+2024.01.27 15:45:41 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:45:41 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:45:41 INFO  Starting debug proxy for [test.scala.Tests(JavaFunctions Can't distribute)]
+2024.01.27 15:45:41 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53581 .
+2024.01.27 15:45:41 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:45:42 INFO  Canceling debug proxy for [test.scala.Tests(JavaFunctions Can't distribute)]
+2024.01.27 15:45:41 INFO  Closing debug server tcp://0.0.0.0:53578
+2024.01.27 15:45:54 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:45:54 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:45:54 INFO  Starting debug proxy for [test.scala.Tests(JavaFunctions Can't distribute)]
+2024.01.27 15:45:54 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53589 .
+2024.01.27 15:45:54 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:45:55 INFO  Canceling debug proxy for [test.scala.Tests(JavaFunctions Can't distribute)]
+2024.01.27 15:45:54 INFO  Closing debug server tcp://0.0.0.0:53586
+2024.01.27 15:46:33 INFO  Shutting down server
+2024.01.27 15:46:33 INFO  shutting down Metals
+2024.01.27 15:46:33 INFO  Shut down connection with build server.
+2024.01.27 15:46:33 INFO  Shut down connection with build server.
+2024.01.27 15:46:33 INFO  Exiting server
+2024.01.27 15:46:40 INFO  Started: Metals version 1.2.0 in folders 'C:\Users\ARNAU\Desktop\TAP\Scala-Projects' for client Visual Studio Code 1.85.2.
+2024.01.27 15:46:41 INFO  Attempting to connect to the build server...
+2024.01.27 15:46:41 INFO  skipping build import with status 'Installed'
+2024.01.27 15:46:41 INFO  Bloop uses C:\Program Files\Java\jdk-17 defined at C:\Users\ARNAU\.bloop\bloop.json
+2024.01.27 15:46:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\bsp.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.01.27 15:46:41 INFO  Attempting to connect to the build server...
+2024.01.27 15:46:41 INFO  Bloop uses C:\Program Files\Java\jdk-17 defined at C:\Users\ARNAU\.bloop\bloop.json
+2024.01.27 15:46:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\project\.metals\bsp.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.01.27 15:46:41 INFO  time: Connected to build server in 0.33s
+2024.01.27 15:46:41 INFO  Connected to Build server: Bloop v1.5.13
+2024.01.27 15:46:44 INFO  no build target found for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.01.27 15:46:47 INFO  time: indexed workspace in 3s
+2024.01.27 15:46:50 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:46:50 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:46:50 INFO  Starting debug proxy for [test.scala.Tests(JavaFunctions Can't distribute)]
+2024.01.27 15:46:50 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53667 .
+2024.01.27 15:46:50 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:46:50 INFO  Closing debug server tcp://0.0.0.0:53664
+2024.01.27 15:46:51 INFO  Canceling debug proxy for [test.scala.Tests(JavaFunctions Can't distribute)]
+2024.01.27 15:47:48 INFO  compiling root-test (1 scala source)
+2024.01.27 15:47:48 INFO  time: compiled root-test in 0.64s
+2024.01.27 15:47:49 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:47:49 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:47:49 INFO  Starting debug proxy for [test.scala.Tests(JavaFunctions Can't distribute)]
+2024.01.27 15:47:49 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53687 .
+2024.01.27 15:47:49 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:47:49 INFO  Canceling debug proxy for [test.scala.Tests(JavaFunctions Can't distribute)]
+2024.01.27 15:47:49 INFO  Closing debug server tcp://0.0.0.0:53684
+Exception in thread "pool-6-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024.01.27 15:47:55 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:47:55 INFO  compiling root-test (1 scala source)
+2024.01.27 15:47:55 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:47:55 WARN  Could not load snapshot text for C:\Users\ARNAU\Desktop\TAP\Scala-Projects\src\test\scala\Tests.scala
+2024.01.27 15:47:55 INFO  time: compiled root-test in 0.64s
+2024.01.27 15:47:56 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-server.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.01.27 15:47:56 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ARNAU\Desktop\TAP\Scala-Projects\.metals\dap-client.trace.json or C:\Users\ARNAU\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.01.27 15:47:56 INFO  Starting debug proxy for [test.scala.Tests(JavaFunctions Can't distribute)]
+2024.01.27 15:47:55 INFO  Trying to attach to remote debuggee VM 127.0.0.1:53696 .
+2024.01.27 15:47:55 INFO  Attaching to debuggee VM succeeded.
+2024.01.27 15:47:56 INFO  Canceling debug proxy for [test.scala.Tests(JavaFunctions Can't distribute)]
+2024.01.27 15:47:56 INFO  Closing debug server tcp://0.0.0.0:53693
+ene 27, 2024 3:48:00 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 71
