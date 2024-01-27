@@ -102,29 +102,60 @@ class Tests extends FunSuite {
   }
 
     test("Java Functions Working") {
-      def main(args: Array[String]): Unit = {    
     val controller: Controller = Controller.getInstance()
-    controller.setPolicy(new GreedyGroup());
+    controller.setPolicy(new RoundRobinImproved());
     val controllerId: Int = controller.getId()
     println(s"Controller ID: $controllerId")
 
     val invoker = new Invoker(1024, "Invoker1") 
     controller.addInvoker(invoker)
 
+    val invoker2 = new Invoker(1024, "Invoker2") 
+    controller.addInvoker(invoker2)
+
     val list: List[Int] = List(1, 2, 3, 4, 5)
     val values: Array[Int] = list.toArray //"casting" to avoid type problem
+
     val add1: Adder = new Adder("add1", 2000, {values});
+    val add2: Adder = new Adder("add2", 2000, {values});
+
         
     controller.addAction(add1)
+    controller.addAction(add2);
 
     // Distribuir acciones (puedes personalizar esto según tu lógica)
-    controller.distributeActions()
+    assert(true,controller.distributeActions())
+
+    assertEquals(1,invoker.getActions().size());
+    assertEquals(1,invoker2.getActions().size());
 
     // Ejecutar acciones asignadas
     controller.executeAssignedActions()
+    assertEquals(0,invoker.getActions().size());
+    assertEquals(0,invoker2.getActions().size());
 
     // Imprimir métricas
+    assertEquals(2,controller.getMetrics().size())
     controller.printMetrics()
   }
+
+  test("Composite Menu Test"){
+    val Menu: composite.MenuCategory=new  composite.MenuCategory("Root");
+    val appetizersCategory: composite.MenuCategory = new composite.MenuCategory("Appetizers")
+    val mainCourses: composite.MenuCategory = new composite.MenuCategory("Main Courses")
+    Menu.addChild(appetizersCategory)
+    Menu.addChild(mainCourses)
+    val salad: composite.SingleItem = new composite.SingleItem("Caesar Salad", 8.99)
+    appetizersCategory.addChild(salad)
+    val pasta: composite.MenuCategory = new composite.MenuCategory("Pasta")  
+    mainCourses.addChild(pasta)
+    val spaghetti: composite.SingleItem = new composite.SingleItem("Spaghetti Bolognese", 12.99)
+    pasta.addChild(spaghetti)
+    val soup: composite.SingleItem = new composite.SingleItem("Tomato Soup", 0.04)
+    appetizersCategory.addChild(soup);
+
+    assertEquals(12.99,mainCourses.getPrice);
+    assertEquals(9.03,appetizersCategory.getPrice);
+
   }
 }

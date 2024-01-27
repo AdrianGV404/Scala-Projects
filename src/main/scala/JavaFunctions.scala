@@ -21,7 +21,7 @@ object JavaFunctions {
 
     val list: List[Int] = List(1, 2, 3, 4, 5)
     val values: Array[Int] = list.toArray //"casting" to avoid type problem
-    val add1: Adder = new Adder("add1", 2000, {values});
+    val add1: Adder = new Adder("add1", 200, {values});
         
     controller.addAction(add1)
 
